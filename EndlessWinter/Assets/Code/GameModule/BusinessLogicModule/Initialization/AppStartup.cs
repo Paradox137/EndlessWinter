@@ -1,3 +1,5 @@
+using System;
+using GameModule.StateMachineModule;
 using SharedModule.ServiceModule.SceneModule;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,18 +9,17 @@ namespace GameModule.BusinessLogicModule
 {
 	public class AppStartup : MonoBehaviour
 	{
-		[SerializeField] SceneLoadingBackground _settingsLoading;
-		private SceneLoader _sceneLoader;
+		private NovelStateMachine _machine;
 
 		[Inject]
-		public void Construct(SceneLoader __sceneLoader)
+		public void Construct(NovelStateMachine __machine)
 		{
-			_sceneLoader = __sceneLoader;
+			_machine = __machine;
 		}
 
-		public void Start()
+		private void Start()
 		{
-			_sceneLoader.LoadSceneBackground(_settingsLoading, LoadSceneMode.Additive, 2f);
+			_machine.Fire(NovelGameState.Startup);
 		}
 	}
 }

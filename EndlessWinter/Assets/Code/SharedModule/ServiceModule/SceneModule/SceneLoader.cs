@@ -10,8 +10,7 @@ namespace SharedModule.ServiceModule.SceneModule
 	{
 		private BackgroundLoading.Complete complete;
 		private ISceneLoaderService _loaderService;
-
-		[Inject]
+		
 		public SceneLoader(ISceneLoaderService __loaderService)
 		{
 			_loaderService = __loaderService;
