@@ -20,6 +20,7 @@ namespace GameModule.PlayerModule
 		public void Initialize()
 		{
 			playerData = Load<PlayerData>();
+			Debug.Log(playerData.SavePlace);
 		}
 		
 		private T Load<T>() where T : PlayerData, new()

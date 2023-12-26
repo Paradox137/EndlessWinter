@@ -6,7 +6,7 @@ namespace GameModule.PlayerModule.Installer
 	{
 		public override void InstallBindings()
 		{
-			Container.Bind<SaveLoadSystem>().AsSingle();
+			Container.BindInterfacesAndSelfTo<SaveLoadSystem>().AsSingle();
 		}
 	}
 }
