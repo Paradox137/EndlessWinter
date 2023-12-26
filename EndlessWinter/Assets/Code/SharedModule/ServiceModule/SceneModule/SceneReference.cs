@@ -2,10 +2,9 @@
 using System.IO;
 using System.Linq;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace SharedModule.ScenesModule
+namespace SharedModule.ServiceModule.SceneModule
 {
 	/// <summary>
 	/// Keeps reference to a scene asset and tracks it's path, so it can be used in the game runtime.
@@ -164,11 +163,6 @@ namespace SharedModule.ScenesModule
 				if (foundAsset) {
 					m_SceneAsset = foundAsset;
 					m_IsDirty = true;
-
-					if (!Application.isPlaying) {
-						// NOTE: This doesn't work for scriptable objects, hence the m_IsDirty.
-						EditorSceneManager.MarkAllScenesDirty();
-					}
 				}
 			} else {
 				string foundPath = AssetDatabase.GetAssetPath(m_SceneAsset);
@@ -178,11 +172,6 @@ namespace SharedModule.ScenesModule
 				if (foundPath != m_ScenePath) {
 					m_ScenePath = foundPath;
 					m_IsDirty = true;
-
-					if (!Application.isPlaying) {
-						// NOTE: This doesn't work for scriptable objects, hence the m_IsDirty.
-						EditorSceneManager.MarkAllScenesDirty();
-					}
 				}
 			}
 		}
