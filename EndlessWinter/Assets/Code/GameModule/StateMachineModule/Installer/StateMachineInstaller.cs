@@ -14,12 +14,10 @@ namespace GameModule.StateMachineModule.Installer
 		{
 			Container.BindInterfacesAndSelfTo<LogicStateMachine<NovelGameState>>().AsSingle();
 			
-			Container.Bind<NovelStateMachine>().AsSingle();
-			
 			Container.Bind<StartupState>().AsSingle();
 			Container.Bind<LoadMainMenuState>().AsSingle().WithArguments(_settingsLoadingMainScene);
 
-			Debug.Log("here happen");
+			Container.BindInterfacesAndSelfTo<NovelStateMachine>().AsSingle();
 		}
 	}
 }

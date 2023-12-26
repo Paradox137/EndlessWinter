@@ -9,14 +9,9 @@ namespace GameModule.BusinessLogicModule
 {
 	public class AppStartup : MonoBehaviour
 	{
-		private NovelStateMachine _machine;
-
 		[Inject]
-		public void Construct(NovelStateMachine __machine)
-		{
-			_machine = __machine;
-		}
-
+		private NovelStateMachine _machine;
+		
 		private void Start()
 		{
 			_machine.Fire(NovelGameState.Startup);

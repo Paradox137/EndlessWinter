@@ -10,8 +10,8 @@ namespace GameModule.StateMachineModule.States
 		private readonly SceneLoadingBackground _settingsLoading;
 
 		[Inject]
-		public LoadMainMenuState(NovelStateMachine __machine, SceneLoader __sceneLoader, SceneLoadingBackground __settingsLoading) 
-			: base(__machine)
+		public LoadMainMenuState(SceneLoader __sceneLoader, SceneLoadingBackground __settingsLoading) 
+			: base()
 		{
 			_sceneLoader = __sceneLoader;
 			_settingsLoading = __settingsLoading;

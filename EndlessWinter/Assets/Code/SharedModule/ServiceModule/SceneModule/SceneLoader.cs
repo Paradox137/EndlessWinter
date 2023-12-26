@@ -27,8 +27,6 @@ namespace SharedModule.ServiceModule.SceneModule
 		
 		public async void LoadSceneBackground(SceneLoadingBackground __backgroundSettings, LoadSceneMode __loadSceneMode, float __time)
 		{
-			Debug.Log("here");
-			
 			await _loaderService.LoadAsync(__backgroundSettings.ScreenScene, __loadSceneMode);
 			
 			complete = await _loaderService.LoadInBackground(__backgroundSettings.NecessaryScene);

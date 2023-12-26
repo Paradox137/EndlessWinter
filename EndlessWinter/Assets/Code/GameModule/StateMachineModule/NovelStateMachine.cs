@@ -1,36 +1,56 @@
-﻿using GameModule.StateMachineModule.States;
+﻿using System.Collections.Generic;
+using GameModule.StateMachineModule.States;
 using SharedModule.StateMachineModule;
+using UnityEngine;
 using Zenject;
 
 namespace GameModule.StateMachineModule
 {
 	public class NovelStateMachine : IStateMachine<NovelGameState>, IInitializable
 	{
-		private readonly LogicStateMachine<NovelGameState> machine;
+		private readonly LogicStateMachine<NovelGameState> _machine;
 		
 		private readonly StartupState _startupState;
 		private readonly LoadMainMenuState _loadMainMenu;
 
 		[Inject]
-		public NovelStateMachine(StartupState __startup, LoadMainMenuState __loadMainMenu)
+		public NovelStateMachine(LogicStateMachine<NovelGameState> __machine, StartupState __startup, LoadMainMenuState __loadMainMenu)
 		{
+			_machine = __machine;
+			
 			_startupState = __startup;
 			_loadMainMenu = __loadMainMenu;
 		}
 		
 		public void Initialize()
 		{
-			machine.DefineState(() => _loadMainMenu);
-			machine.DefineState(() => _startupState);
+			Subscribe();
 			
-			machine.DefineStartTransition<StartupState>(NovelGameState.Startup);
+			_machine.DefineState(() => _loadMainMenu);
+			_machine.DefineState(() => _startupState);
 			
-			machine.DefineTransition<StartupState, LoadMainMenuState>(NovelGameState.LoadMainMenu);
+			_machine.DefineStartTransition<StartupState>(NovelGameState.Startup);
+			
+			_machine.DefineTransition<StartupState, LoadMainMenuState>(NovelGameState.LoadMainMenu);
 		}
-		
+
+		private void Subscribe()
+		{
+			List<NovelState> _novelStates = new List<NovelState>()
+			{
+				_startupState,
+				_loadMainMenu,
+			};
+			
+			foreach (NovelState state in _novelStates)
+			{
+				state.onNextState += Fire;
+			}
+		}
+
 		public void Fire(NovelGameState trigger)
 		{
-			machine.Fire(trigger);
+			_machine.Fire(trigger);
 		}
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using SharedModule.ServiceModule.SceneModule;
+using UnityEngine;
 using Zenject;
 
 namespace GameModule.ServiceModule.SceneModule

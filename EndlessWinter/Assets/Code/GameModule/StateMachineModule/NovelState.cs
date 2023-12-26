@@ -1,15 +1,16 @@
-﻿using SharedModule.StateMachineModule;
+﻿using System;
+using SharedModule.StateMachineModule;
 using UnityEngine;
+using Zenject;
 
 namespace GameModule.StateMachineModule
 {
 	public abstract class NovelState : IState
 	{
-		private NovelStateMachine _machine;
-
-		protected NovelState(NovelStateMachine __machine)
+		public Action<NovelGameState> onNextState;
+		protected NovelState()
 		{
-			_machine = __machine;
+			
 		}
 		
 		public virtual void Enter()
@@ -21,6 +22,5 @@ namespace GameModule.StateMachineModule
 			
 		}
 		
-		protected void NextState(NovelGameState state) => _machine.Fire(state);
 	}
 }
