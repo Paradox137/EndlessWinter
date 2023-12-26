@@ -1,10 +1,9 @@
-﻿using GameModule.StateMachineModule.States;
-using SharedModule.ServiceModule.SceneModule;
+﻿using SharedModule.ServiceModule.SceneModule;
 using SharedModule.StateMachineModule;
 using UnityEngine;
 using Zenject;
 
-namespace GameModule.StateMachineModule.Installer
+namespace GameModule.StateMachineModule
 {
 	public class StateMachineInstaller : MonoInstaller
 	{

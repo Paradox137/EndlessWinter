@@ -1,8 +1,5 @@
-using System;
 using GameModule.StateMachineModule;
-using SharedModule.ServiceModule.SceneModule;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace GameModule.BusinessLogicModule

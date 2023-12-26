@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace GameModule.StateMachineModule.States
+namespace GameModule.StateMachineModule
 {
 	public class StartupState : NovelState
 	{

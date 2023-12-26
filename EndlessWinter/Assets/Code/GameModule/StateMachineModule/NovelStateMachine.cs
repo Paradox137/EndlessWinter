@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using GameModule.StateMachineModule.States;
 using SharedModule.StateMachineModule;
-using UnityEngine;
 using Zenject;
 
 namespace GameModule.StateMachineModule
