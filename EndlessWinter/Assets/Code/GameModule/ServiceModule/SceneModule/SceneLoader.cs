@@ -20,14 +20,14 @@ namespace SharedModule.ServiceModule.SceneModule
 		{
 			onUploadedData += ActivateScene;
 			
-			await _loaderService.LoadAsync(__backgroundSettings.ScreenScene);
+			await _loaderService.LoadAsync(__backgroundSettings.TransitionScene);
 			
 			complete = await _loaderService.LoadInBackground(__backgroundSettings.NecessaryScene);
 		}
 		
 		public async void LoadSceneBackground(SceneLoadingBackground __backgroundSettings, LoadSceneMode __loadSceneMode, float __time)
 		{
-			await _loaderService.LoadAsync(__backgroundSettings.ScreenScene, __loadSceneMode);
+			await _loaderService.LoadAsync(__backgroundSettings.TransitionScene, __loadSceneMode);
 			
 			complete = await _loaderService.LoadInBackground(__backgroundSettings.NecessaryScene);
 
