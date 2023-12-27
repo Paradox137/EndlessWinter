@@ -36,7 +36,7 @@ namespace SharedModule.ServiceModule.SceneModule
 			ActivateScene();
 		}
 		
-		private async UniTask LoadSceneImmediately(SceneLoadingImmediately __immediatelySettings)
+		public async UniTask LoadSceneImmediately(SceneLoadingImmediately __immediatelySettings)
 		{
 			await _loaderService.LoadAsync(__immediatelySettings.NecessaryScene);
 		}

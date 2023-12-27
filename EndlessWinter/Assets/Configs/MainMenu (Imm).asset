@@ -9,14 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a19ee39e34a74732a077a9693aec2bd3, type: 3}
-  m_Name: MainMenu
+  m_Script: {fileID: 11500000, guid: a346ce042b894a6689feb116c4747581, type: 3}
+  m_Name: MainMenu (Imm)
   m_EditorClassIdentifier: 
   NecessaryScene:
     m_SceneAsset: {fileID: 102900000, guid: af86ed5ce3e20214595768aba8598186, type: 3}
     m_IsDirty: 0
     m_ScenePath: Assets/Scenes/MainMenu.unity
-  ScreenScene:
-    m_SceneAsset: {fileID: 102900000, guid: aba51048a7c69be4eb528f5a81e0d67b, type: 3}
-    m_IsDirty: 0
-    m_ScenePath: Assets/Scenes/LoadingScene.unity

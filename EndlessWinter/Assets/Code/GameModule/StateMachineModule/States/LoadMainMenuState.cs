@@ -7,21 +7,23 @@ namespace GameModule.StateMachineModule
 	public class LoadMainMenuState : NovelState
 	{
 		private readonly SceneLoader _sceneLoader;
-		private readonly SceneLoadingBackground _settingsLoading;
+		private readonly SceneLoadingImmediately _settingsLoading;
 
 		[Inject]
-		public LoadMainMenuState(SceneLoader __sceneLoader, SceneLoadingBackground __settingsLoading) 
+		public LoadMainMenuState(SceneLoader __sceneLoader, SceneLoadingImmediately __settingsLoading) 
 			: base()
 		{
 			_sceneLoader = __sceneLoader;
 			_settingsLoading = __settingsLoading;
 		}
 
-		public override void Enter()
+		public override async void Enter()
 		{
 			base.Enter();
 			
-			_sceneLoader.LoadSceneBackground(_settingsLoading, LoadSceneMode.Additive, 1f);
+			await _sceneLoader.LoadSceneImmediately(_settingsLoading);
+			
+			onNextState?.Invoke(NovelGameState.MainMenu);
 		}
 	}
 }

@@ -7,7 +7,7 @@ namespace GameModule.StateMachineModule
 {
 	public class StateMachineInstaller : MonoInstaller
 	{
-		[SerializeField] SceneLoadingBackground _settingsLoadingMainScene;
+		[SerializeField] SceneLoadingImmediately _settingsLoadingMainScene;
 		
 		public override void InstallBindings()
 		{
@@ -15,6 +15,7 @@ namespace GameModule.StateMachineModule
 			
 			Container.Bind<StartupState>().AsSingle();
 			Container.Bind<LoadMainMenuState>().AsSingle().WithArguments(_settingsLoadingMainScene);
+			Container.Bind<MainMenuState>().AsSingle();
 
 			Container.BindInterfacesAndSelfTo<NovelStateMachine>().AsSingle();
 		}

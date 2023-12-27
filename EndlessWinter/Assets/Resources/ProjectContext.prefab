@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83ef5f5a30344269cefe575f1187a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settingsLoadingMainScene: {fileID: 11400000, guid: fafa6313a7dc69145b3ecc55209683f7, type: 2}
+  _settingsLoadingMainScene: {fileID: 11400000, guid: 84e285d3f414a7843b517f95a6ddf4a4, type: 2}
 --- !u!114 &1564425039524466802
 MonoBehaviour:
   m_ObjectHideFlags: 0

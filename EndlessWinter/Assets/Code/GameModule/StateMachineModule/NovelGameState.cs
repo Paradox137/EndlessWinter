@@ -8,6 +8,8 @@
 		LoadNewNovel,
 		LoadSavedNovel,
 		
+		MainMenu,
+		
 		StartGame,
 		EndGame,
 	}
