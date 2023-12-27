@@ -21,7 +21,7 @@ namespace GameModule.StateMachineModule
 		{
 			base.Enter();
 			
-			_sceneLoader.LoadSceneBackground(_settingsLoading, LoadSceneMode.Additive, 2f);
+			_sceneLoader.LoadSceneBackground(_settingsLoading, LoadSceneMode.Additive, 1f);
 		}
 	}
 }
