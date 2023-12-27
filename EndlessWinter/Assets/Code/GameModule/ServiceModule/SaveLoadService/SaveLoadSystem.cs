@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using GameModule.EntityModule;
+using GameModule.SettingsModule;
+using JetBrains.Annotations;
 using UnityEngine;
 using Zenject;
 
@@ -6,6 +11,7 @@ namespace GameModule.PlayerModule
 {
 	public class SaveLoadSystem : IInitializable
 	{
+		private readonly List<PerkEntity> _entities;
 		//private DateTime _lastSaveTime;
 		
 		private PlayerData playerData;
@@ -17,19 +23,27 @@ namespace GameModule.PlayerModule
 			set => playerData = value;
 		}
 
-		public void Initialize()
+		[Inject]
+		public SaveLoadSystem(List<PerkEntity> __perkEntities)
 		{
-			playerData = Load<PlayerData>();
+			_entities = __perkEntities;
+			
+			PlayerData = Load();
 		}
 		
-		private T Load<T>() where T : PlayerData, new()
+		public void Initialize()
+		{
+			Debug.Log("PlayerData Loaded");
+		}
+		
+		private PlayerData Load()
 		{
 			string localStringData = PlayerPrefs.GetString(KEY_SAVE);
 			
-			return string.IsNullOrEmpty(localStringData) ? new() : JsonUtility.FromJson<T>(localStringData);
+			return string.IsNullOrEmpty(localStringData) ? new PlayerData(_entities) : JsonUtility.FromJson<PlayerData>(localStringData);
 		}
 
-		public void Save<T>(T data) where T : PlayerData
+		public void Save(PlayerData data)
 		{
 			string stringData = JsonUtility.ToJson(data);
 			

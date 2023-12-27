@@ -1,6 +1,9 @@
-﻿namespace GameModule.DataModule
+﻿using System.Collections.Generic;
+using GameModule.PlayerModule;
+
+namespace GameModule.DataModule
 {
-	public class PlayerDataValidator
+	public static class PlayerDataValidator
 	{
 		
 	}
