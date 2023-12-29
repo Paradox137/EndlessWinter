@@ -738,6 +738,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353701054325278265, guid: 75bcc6cfc6afaca4b93c83b236e0c420, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5601378496674320305, guid: 75bcc6cfc6afaca4b93c83b236e0c420, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -821,6 +825,10 @@ PrefabInstance:
     - target: {fileID: 8998005180513926559, guid: 75bcc6cfc6afaca4b93c83b236e0c420, type: 3}
       propertyPath: m_Name
       value: CharacterWindow_dynamic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8998005180513926559, guid: 75bcc6cfc6afaca4b93c83b236e0c420, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9045680786116661226, guid: 75bcc6cfc6afaca4b93c83b236e0c420, type: 3}
       propertyPath: m_AnchorMax.y
@@ -924,10 +932,6 @@ PrefabInstance:
     - target: {fileID: 1960726076947587931, guid: 1a87eb225f7c4114aa83e0fc3a452bf5, type: 3}
       propertyPath: m_Name
       value: MainMenuWindow_static
-      objectReference: {fileID: 0}
-    - target: {fileID: 6309204072759404967, guid: 1a87eb225f7c4114aa83e0fc3a452bf5, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6390994882152595582, guid: 1a87eb225f7c4114aa83e0fc3a452bf5, type: 3}
       propertyPath: m_Pivot.x

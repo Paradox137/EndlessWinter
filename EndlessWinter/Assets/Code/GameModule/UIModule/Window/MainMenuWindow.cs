@@ -7,18 +7,23 @@ namespace GameModule.UIModule.Window
 	public class MainMenuWindow : BaseWindow
 	{
 		[SerializeField] private Button _characterMenuButton;
-
+		[SerializeField] private Button _newGameButton;
+		[SerializeField] private Button _continueGameButton;
+		
 		protected override void Awake()
 		{
 			base.Awake();
 			
 			SubscribeActions();
 		}
-
-
+		
 		public override void OnShow(object[] args)
 		{
+			bool gameExists = (bool) args[0];
 			
+			Debug.Log("GameExists = " + gameExists);
+			
+			_continueGameButton.enabled = gameExists;
 		}
 		public override void OnHide()
 		{

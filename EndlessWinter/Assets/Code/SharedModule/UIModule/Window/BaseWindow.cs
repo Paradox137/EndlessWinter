@@ -13,7 +13,7 @@ namespace SharedModule.UIModule.Window
 		void OnShow(object[] args);
 		void OnHide();
 	}
-	public abstract class BaseWindow : MonoBehaviour, IInitializable
+	public abstract class BaseWindow : MonoBehaviour
 	{
 		protected Canvas _windowCanvas;
 		
@@ -26,11 +26,6 @@ namespace SharedModule.UIModule.Window
 			WindowsCollection.Add(this);
 		}
 		
-		public void Initialize()
-		{ 
-			
-		}
-
 		public void Show(params object[] args)
 		{
 			OnShow(args);
