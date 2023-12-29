@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using GameModule.EntityModule;
 using GameModule.ExtensionsModule;
@@ -18,6 +19,11 @@ namespace GameModule.CollectionModule
 			_perkEntities = __perkEntities;
 			
 			Debug.Log("Collection Inited");
+		}
+		
+		public PerkType GetPerkType(int i)
+		{
+			return _perkEntities[i].Type;
 		}
 		
 		public string GetPerkName(PerkType __characteristic)

@@ -13,27 +13,27 @@ MonoBehaviour:
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
   PerkEntities:
-  - Name: 0
+  - Type: 0
     Value: 50
-  - Name: 1
+  - Type: 1
     Value: 50
-  - Name: 2
+  - Type: 2
     Value: 50
-  - Name: 3
+  - Type: 3
     Value: 50
-  - Name: 4
+  - Type: 4
     Value: 50
-  - Name: 5
+  - Type: 5
     Value: 50
-  - Name: 6
+  - Type: 6
     Value: 50
-  - Name: 7
+  - Type: 7
     Value: 50
-  - Name: 8
+  - Type: 8
     Value: 50
-  - Name: 9
+  - Type: 9
     Value: 50
-  - Name: 10
+  - Type: 10
     Value: 50
-  - Name: 11
+  - Type: 11
     Value: 50
