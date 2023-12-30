@@ -44,25 +44,12 @@ namespace GameModule.UIModule.Window
 			_characterMenuButton.onClick.AddListener(OnCharacterButtonClick);
 			
 			_newGameButton.onClick.AddListener(OnNewGameClick);
+			
 			_continueGameButton.onClick.AddListener(OnContinueGameClick);
 		}
 
-		private void OnCharacterButtonClick()
-		{
-			this.Hide();
-			WindowsCollection.Get<CharacterWindow>().Show();
-		}
-
-		private void OnNewGameClick()
-		{
-			this.Hide();
-			_menuAction.Rise(MenuLogicAction.NewGame);
-		}
-
-		private void OnContinueGameClick()
-		{
-			this.Hide();
-			_menuAction.Rise(MenuLogicAction.ContinueGame);
-		}
+		private void OnCharacterButtonClick() { this.Hide(); WindowsCollection.Get<CharacterWindow>().Show(); }
+		private void OnNewGameClick() { this.Hide(); _menuAction.Rise(MenuLogicAction.NewGame); }
+		private void OnContinueGameClick() { this.Hide(); _menuAction.Rise(MenuLogicAction.ContinueGame); }
 	}
 }
