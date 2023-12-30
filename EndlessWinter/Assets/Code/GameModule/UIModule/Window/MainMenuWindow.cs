@@ -23,7 +23,7 @@ namespace GameModule.UIModule.Window
 			
 			Debug.Log("GameExists = " + gameExists);
 			
-			_continueGameButton.enabled = gameExists;
+			_continueGameButton.interactable = gameExists;
 		}
 		public override void OnHide()
 		{

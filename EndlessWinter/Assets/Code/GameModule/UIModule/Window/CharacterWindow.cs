@@ -3,6 +3,7 @@ using GameModule.CollectionModule;
 using GameModule.PlayerModule;
 using SharedModule.UIModule.Window;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 namespace GameModule.UIModule.Window
@@ -10,7 +11,8 @@ namespace GameModule.UIModule.Window
 	public class CharacterWindow : BaseWindow
 	{
 		[SerializeField] private PerkView[] _perkViews;
-
+		[SerializeField] private Button _exitButton;
+		
 		private PerkCollection _perkCollection;
 
 		[Inject]
@@ -18,6 +20,14 @@ namespace GameModule.UIModule.Window
 		{
 			_perkCollection = __perkCollection;
 		}
+
+		protected override void Awake()
+		{
+			base.Awake();
+
+			SubscribeActions();
+		}
+
 		public override void OnShow(object[] args)
 		{
 			for (int i = 0; i < _perkViews.Length; i++)
@@ -34,6 +44,18 @@ namespace GameModule.UIModule.Window
 		public override void OnHide()
 		{
 			
+		}
+		
+		private void SubscribeActions()
+		{
+			_exitButton.onClick.AddListener(OnExitButtonClick);
+		}
+		
+		private void OnExitButtonClick()
+		{
+			this.Hide();
+			
+			WindowsCollection.Get<MainMenuWindow>().Show();
 		}
 	}
 }
