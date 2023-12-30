@@ -1,4 +1,7 @@
-﻿using GameModule.PlayerModule;
+﻿using System;
+using Cysharp.Threading.Tasks;
+using GameModule.BusinessLogicModule.PlayerUIActions;
+using GameModule.PlayerModule;
 using GameModule.UIModule.Window;
 using SharedModule.UIModule.Window;
 using UnityEngine;
@@ -9,18 +12,32 @@ namespace GameModule.StateMachineModule
 	public class MainMenuState : NovelState
 	{
 		private readonly SaveLoadSystem _saveLoadSystem;
+		private readonly MenuAction _menuAction;
 		
 		[Inject]
-		public MainMenuState(SaveLoadSystem __saveLoadSystem) : base()
+		public MainMenuState(SaveLoadSystem __saveLoadSystem,  MenuAction __menuAction) : base()
 		{
 			_saveLoadSystem = __saveLoadSystem;
+			_menuAction = __menuAction;
 		}
 
 		public override void Enter()
 		{
 			base.Enter();
+
+			_menuAction.Action += ChooseGame;
 			
 			WindowsCollection.Get<MainMenuWindow>().Show(_saveLoadSystem.PlayerData.IsGameStarted);
+		}
+		
+		private void ChooseGame(MenuLogicAction __item)
+		{
+			Debug.Log("Choose " + __item);
+		}
+		
+		public override void Exit()
+		{
+			_menuAction.Action -= ChooseGame;
 		}
 	}
 }

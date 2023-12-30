@@ -1,6 +1,8 @@
-﻿using SharedModule.UIModule.Window;
+﻿using GameModule.BusinessLogicModule.PlayerUIActions;
+using SharedModule.UIModule.Window;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace GameModule.UIModule.Window
 {
@@ -9,7 +11,14 @@ namespace GameModule.UIModule.Window
 		[SerializeField] private Button _characterMenuButton;
 		[SerializeField] private Button _newGameButton;
 		[SerializeField] private Button _continueGameButton;
-		
+
+		private MenuAction _menuAction;
+
+		[Inject]
+		public void Construct(MenuAction __menuAction)
+		{
+			_menuAction = __menuAction;
+		}
 		protected override void Awake()
 		{
 			base.Awake();
@@ -33,13 +42,27 @@ namespace GameModule.UIModule.Window
 		private void SubscribeActions()
 		{
 			_characterMenuButton.onClick.AddListener(OnCharacterButtonClick);
+			
+			_newGameButton.onClick.AddListener(OnNewGameClick);
+			_continueGameButton.onClick.AddListener(OnContinueGameClick);
 		}
 
 		private void OnCharacterButtonClick()
 		{
 			this.Hide();
-			
 			WindowsCollection.Get<CharacterWindow>().Show();
+		}
+
+		private void OnNewGameClick()
+		{
+			this.Hide();
+			_menuAction.Rise(MenuLogicAction.NewGame);
+		}
+
+		private void OnContinueGameClick()
+		{
+			this.Hide();
+			_menuAction.Rise(MenuLogicAction.ContinueGame);
 		}
 	}
 }
