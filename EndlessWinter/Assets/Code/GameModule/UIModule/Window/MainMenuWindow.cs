@@ -9,6 +9,8 @@ namespace GameModule.UIModule.Window
 	public class MainMenuWindow : BaseWindow
 	{
 		[SerializeField] private Button _characterMenuButton;
+		
+		//todo: изменить после попапа
 		[SerializeField] private Button _newGameButton;
 		[SerializeField] private Button _continueGameButton;
 
