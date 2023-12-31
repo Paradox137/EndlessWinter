@@ -51,7 +51,9 @@ namespace GameModule.UIModule.Window
 		}
 
 		private void OnCharacterButtonClick() { this.Hide(); WindowsCollection.Get<CharacterWindow>().Show(); }
-		private void OnNewGameClick() { this.Hide(); _menuAction.Rise(MenuLogicAction.NewGame); }
-		private void OnContinueGameClick() { this.Hide(); _menuAction.Rise(MenuLogicAction.ContinueGame); }
+		
+		//todo: тут попапы на новую игру а rise уже там
+		private void OnNewGameClick() => _menuAction.Rise(MenuLogicAction.NewGame); 
+		private void OnContinueGameClick() => _menuAction.Rise(MenuLogicAction.ContinueGame);
 	}
 }
