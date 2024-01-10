@@ -6,6 +6,7 @@ using GameModule.SettingsModule;
 using JetBrains.Annotations;
 using UnityEngine;
 using Zenject;
+using Newtonsoft.Json;
 
 namespace GameModule.PlayerModule
 {
@@ -15,39 +16,43 @@ namespace GameModule.PlayerModule
 		//private DateTime _lastSaveTime;
 		
 		private PlayerData playerData;
-		private const string KEY_SAVE = "save";
-
-		public PlayerData PlayerData
-		{
-			get => playerData;
-			set => playerData = value;
-		}
+		private const string KEY_SAVE = "save6";
+		
 
 		[Inject]
 		public SaveLoadSystem(List<PerkEntity> __perkEntities)
 		{
 			_entities = __perkEntities;
 			
-			PlayerData = Load();
+			playerData = Load();
 		}
 		
 		public void Initialize()
 		{
 			Debug.Log("PlayerData Loaded");
+			
+			Debug.Log(playerData.IsGameStarted);
+			Debug.Log(playerData.SaveID);
 		}
 		
 		private PlayerData Load()
 		{
 			string localStringData = PlayerPrefs.GetString(KEY_SAVE);
 			
-			return string.IsNullOrEmpty(localStringData) ? new PlayerData(_entities) : JsonUtility.FromJson<PlayerData>(localStringData);
+			return string.IsNullOrEmpty(localStringData) ? new PlayerData(_entities) : JsonConvert.DeserializeObject<PlayerData>(localStringData);
 		}
 
-		public void Save(PlayerData data)
+		public void Save(PlayerData __playerData)
 		{
-			string stringData = JsonUtility.ToJson(data);
+			__playerData.SaveID++;
+			
+			string stringData = JsonConvert.SerializeObject(__playerData);
 			
 			PlayerPrefs.SetString(KEY_SAVE, stringData);
+			
+			Debug.Log(playerData.IsGameStarted);
+			Debug.Log(playerData.SaveID);
+
 		}
 
 		public PlayerData GetPlayerData()

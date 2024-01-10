@@ -8,12 +8,14 @@ namespace GameModule.UIModule.Window.Installers
 	{
 		[SerializeField] private CharacterWindow _characterWindow;
 		[SerializeField] private MainMenuWindow _mainMenuWindow;
+		[SerializeField] private AssertNewGamePopupWindow _assertNewGamePopupWindow;
 		public override void InstallBindings()
 		{
 			Container.BindInterfacesAndSelfTo<WindowsCollection>().AsTransient();
 
 			Container.BindInterfacesAndSelfTo<CharacterWindow>().FromInstance(_characterWindow).AsSingle();
 			Container.BindInterfacesAndSelfTo<MainMenuWindow>().FromInstance(_mainMenuWindow).AsSingle();
+			Container.BindInterfacesAndSelfTo<AssertNewGamePopupWindow>().FromInstance(_assertNewGamePopupWindow).AsSingle();
 		}
 	}
 }

@@ -15,7 +15,7 @@ namespace GameModule
 			Container.BindInterfacesAndSelfTo<SaveLoadSystem>().FromInstance(saveLoadSystem).AsSingle();
 
 
-			Container.Bind<PerkCollection>().AsSingle().WithArguments(saveLoadSystem.PlayerData.PerkEntities).NonLazy();
+			Container.Bind<PerkCollection>().AsSingle().WithArguments(saveLoadSystem.GetPlayerData().PerkEntities).NonLazy();
 		}
 	}
 }

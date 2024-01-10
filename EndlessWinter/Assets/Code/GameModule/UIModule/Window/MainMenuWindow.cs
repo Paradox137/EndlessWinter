@@ -14,46 +14,64 @@ namespace GameModule.UIModule.Window
 		[SerializeField] private Button _newGameButton;
 		[SerializeField] private Button _continueGameButton;
 
-		private MenuAction _menuAction;
-
+		private MenuAction _newGameAction;
+		private bool _gameExists;
+		
 		[Inject]
 		public void Construct(MenuAction __menuAction)
 		{
-			_menuAction = __menuAction;
+			_newGameAction = __menuAction;
 		}
 		protected override void Awake()
 		{
 			base.Awake();
-			
-			SubscribeActions();
-		}
-		
-		public override void OnShow(object[] args)
-		{
-			bool gameExists = (bool) args[0];
-			
-			Debug.Log("GameExists = " + gameExists);
-			
-			_continueGameButton.interactable = gameExists;
-		}
-		public override void OnHide()
-		{
-			
-		}
-		
-		private void SubscribeActions()
-		{
-			_characterMenuButton.onClick.AddListener(OnCharacterButtonClick);
-			
-			_newGameButton.onClick.AddListener(OnNewGameClick);
-			
-			_continueGameButton.onClick.AddListener(OnContinueGameClick);
 		}
 
-		private void OnCharacterButtonClick() { this.Hide(); WindowsCollection.Get<CharacterWindow>().Show(); }
+		public override void LocalCachedShow()
+		{
+			SubscribeActions(_gameExists);
+			
+			base.LocalCachedShow();
+		}
+
+		protected override void OnShow(object[] args)
+		{
+			_gameExists = (bool) args[0];
+			
+			Debug.Log("GameExists = " + _gameExists);
+			
+			_continueGameButton.interactable = _gameExists;
+			
+			SubscribeActions(_gameExists);
+		}
+
+		protected override void OnHide()
+		{
+			CleanUp();
+		}
 		
-		//todo: тут попапы на новую игру а rise уже там
-		private void OnNewGameClick() => _menuAction.Rise(MenuLogicAction.NewGame); 
-		private void OnContinueGameClick() => _menuAction.Rise(MenuLogicAction.ContinueGame);
+		private void SubscribeActions(bool __gameExists)
+		{
+			_characterMenuButton.onClick.AddListener(ShowCharacterWindow);
+			
+			if(__gameExists)
+				_newGameButton.onClick.AddListener(ShowAssertNewGamePopUp);
+			else
+				_newGameButton.onClick.AddListener(CreateNewGame);
+			
+			_continueGameButton.onClick.AddListener(ContinueGame);
+		}
+		
+		private void ShowAssertNewGamePopUp() => WindowsCollection.Get<AssertNewGamePopupWindow>().Show(_newGameAction);
+		private void ShowCharacterWindow() { this.Hide(); WindowsCollection.Get<CharacterWindow>().Show(); }
+		private void CreateNewGame() => _newGameAction.Rise(MenuLogicAction.NewGame);
+		private void ContinueGame() => _newGameAction.Rise(MenuLogicAction.ContinueGame);
+		
+		private void CleanUp()
+		{
+			_characterMenuButton.onClick.RemoveListener(ShowCharacterWindow);
+			_continueGameButton.onClick.RemoveListener(ContinueGame);
+			_newGameButton.onClick.RemoveAllListeners();
+		}
 	}
 }

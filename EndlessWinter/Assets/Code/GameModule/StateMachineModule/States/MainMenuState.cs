@@ -27,12 +27,16 @@ namespace GameModule.StateMachineModule
 
 			_menuAction.Action += ChooseGame;
 			
-			WindowsCollection.Get<MainMenuWindow>().Show(_saveLoadSystem.PlayerData.IsGameStarted);
+			WindowsCollection.Get<MainMenuWindow>().Show(_saveLoadSystem.GetPlayerData().IsGameStarted);
 		}
 		
 		private void ChooseGame(MenuLogicAction __item)
 		{
 			Debug.Log("Choose " + __item);
+
+			PlayerData pd = _saveLoadSystem.GetPlayerData();
+			pd.IsGameStarted = true;
+			_saveLoadSystem.Save(pd);
 		}
 		
 		public override void Exit()

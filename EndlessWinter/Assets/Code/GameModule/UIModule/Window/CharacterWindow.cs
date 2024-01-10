@@ -24,11 +24,10 @@ namespace GameModule.UIModule.Window
 		protected override void Awake()
 		{
 			base.Awake();
-
-			SubscribeActions();
+			
 		}
 
-		public override void OnShow(object[] args)
+		protected override void OnShow(object[] args)
 		{
 			for (int i = 0; i < _perkViews.Length; i++)
 			{
@@ -40,12 +39,14 @@ namespace GameModule.UIModule.Window
 				_perkViews[i].ProgressValue.text = $"{currentPerkProgress}/100";
 				_perkViews[i].ProgressImage.fillAmount = currentPerkProgress / 100f;
 			}
-		}
-		public override void OnHide()
-		{
 			
+			SubscribeActions();
 		}
-		
+		protected override void OnHide()
+		{
+			Cleanup();
+		}
+
 		private void SubscribeActions()
 		{
 			_exitButton.onClick.AddListener(OnExitButtonClick);
@@ -55,7 +56,13 @@ namespace GameModule.UIModule.Window
 		{
 			this.Hide();
 			
-			WindowsCollection.Get<MainMenuWindow>().Show();
+			WindowsCollection.Get<MainMenuWindow>().LocalCachedShow();
 		}
+		
+		private void Cleanup()
+		{
+			_exitButton.onClick.RemoveListener(OnExitButtonClick);
+		}
+
 	}
 }

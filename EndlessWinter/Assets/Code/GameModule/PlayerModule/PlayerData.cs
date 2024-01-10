@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GameModule.EntityModule;
 using GameModule.ExtensionsModule;
 using UnityEngine;
 
 namespace GameModule.PlayerModule
 {
+	[Serializable]
 	public class PlayerData
 	{
 		private int _saveID;

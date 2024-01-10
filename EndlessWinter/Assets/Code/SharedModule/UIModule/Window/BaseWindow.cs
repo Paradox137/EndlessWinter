@@ -33,19 +33,20 @@ namespace SharedModule.UIModule.Window
 			_windowCanvas.enabled = true;
 		}
 		
-		public void Show()
+		public virtual void LocalCachedShow()
 		{
 			_windowCanvas.enabled = true;
 		}
-		
-		public void Hide()
+
+		protected void Hide()
 		{
 			_windowCanvas.enabled = false;
             
 			OnHide();
 		}
 
-		public abstract void OnShow(object[] args);
-		public abstract void OnHide();
+		protected abstract void OnShow(object[] args);
+
+		protected abstract void OnHide();
 	}
 }
