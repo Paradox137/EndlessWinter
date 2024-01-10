@@ -16,7 +16,21 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dce32a79d09544f4dbb31184dbeff875
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 87dde5044ce62a641a5d04b0d2694d0a
+    m_Address: Assets/AddressablesAssets/large-file.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    - chapter1
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d25392788a62461459462e00efb0bc37
+    m_Address: Assets/AddressablesAssets/ActorTest.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    - chapter1
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 366196af4a4bad7438e6ef1f99266537, type: 2}
   m_SchemaSet:
