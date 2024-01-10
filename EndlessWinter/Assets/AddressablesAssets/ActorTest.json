@@ -1,0 +1,19 @@
+{
+  "actorName": 0,
+  "startReplicas": [
+    "Tom",
+    "Bob"
+  ],
+  "positiveReplicas": [
+    "Tom",
+    "Bob"
+  ],
+  "negativeReplicas": [
+    "Tom",
+    "Bob"
+  ],
+  "endReplicas": [
+    "Tom",
+    "Bob"
+  ]
+}
