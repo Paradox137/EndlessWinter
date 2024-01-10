@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.dre0dru.assetmanagement": {
+      "version": "https://github.com/dre0dru/AssetManagement.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "efe2a19c0267e0a7ab98e5d34b439188fb099ff0"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
