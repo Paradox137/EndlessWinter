@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using Dre0Dru.Collections;
 using Dre0Dru.EditorExtensions;
 using UnityEngine;
@@ -14,4 +14,4 @@ namespace Dre0Dru.RuntimeAssets.Editor
         [SerializeField]
         public FolderReference[] ScanFolders;
     }
-}
+}*/

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using Dre0Dru.EditorExtensions.Editor;
 using UnityEditor;
 using UnityEngine;
@@ -38,4 +38,4 @@ namespace Dre0Dru.RuntimeAssets.Editor
             AssetDatabase.Refresh();
         }
     }
-}
+}*/
