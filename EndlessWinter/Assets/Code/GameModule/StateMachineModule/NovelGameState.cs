@@ -5,12 +5,12 @@
 		Startup,
 		
 		LoadMainMenu,
-		LoadNewNovel,
+		LoadNewGame,
 		LoadSavedNovel,
 		
 		MainMenu,
 		
-		StartGame,
+		InGame,
 		EndGame,
 	}
 }

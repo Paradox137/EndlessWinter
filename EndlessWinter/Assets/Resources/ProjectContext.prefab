@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settingsLoadingMainScene: {fileID: 11400000, guid: 84e285d3f414a7843b517f95a6ddf4a4, type: 2}
+  _settingsLoadingNewNovelScene: {fileID: 11400000, guid: 1dd2b3a5819bcb346b948e18c3026260, type: 2}
 --- !u!114 &1564425039524466802
 MonoBehaviour:
   m_ObjectHideFlags: 0

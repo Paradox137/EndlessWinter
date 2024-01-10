@@ -11,8 +11,8 @@ namespace GameModule
 		[SerializeField] private PlayerDataSettings _playerSettings;
 		public override void InstallBindings()
 		{
-			SaveLoadSystem saveLoadSystem = new SaveLoadSystem(_playerSettings.PerkEntities);
-			Container.BindInterfacesAndSelfTo<SaveLoadSystem>().FromInstance(saveLoadSystem).AsSingle();
+			PlayerSaveLoadSystem saveLoadSystem = new PlayerSaveLoadSystem(_playerSettings.PerkEntities);
+			Container.BindInterfacesAndSelfTo<PlayerSaveLoadSystem>().FromInstance(saveLoadSystem).AsSingle();
 
 
 			Container.Bind<PerkCollection>().AsSingle().WithArguments(saveLoadSystem.GetPlayerData().PerkEntities).NonLazy();

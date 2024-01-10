@@ -11,15 +11,18 @@ namespace GameModule.StateMachineModule
 		private readonly StartupState _startupState;
 		private readonly LoadMainMenuState _loadMainMenu;
 		private readonly MainMenuState _mainMenu;
+		private readonly LoadNewGameState _loadNewNovel;
 
 		[Inject]
-		public NovelStateMachine(LogicStateMachine<NovelGameState> __machine, StartupState __startup, LoadMainMenuState __loadMainMenu, MainMenuState __mainMenu)
+		public NovelStateMachine(LogicStateMachine<NovelGameState> __machine, StartupState __startup,
+			LoadMainMenuState __loadMainMenu, MainMenuState __mainMenu, LoadNewGameState __loadNewNovel)
 		{
 			_machine = __machine;
 			
 			_startupState = __startup;
 			_loadMainMenu = __loadMainMenu;
 			_mainMenu = __mainMenu;
+			_loadNewNovel = __loadNewNovel;
 		}
 		
 		public void Initialize()
@@ -29,11 +32,13 @@ namespace GameModule.StateMachineModule
 			_machine.DefineState(() => _loadMainMenu);
 			_machine.DefineState(() => _startupState);
 			_machine.DefineState(() => _mainMenu);
+			_machine.DefineState(() => _loadNewNovel);
 			
 			_machine.DefineStartTransition<StartupState>(NovelGameState.Startup);
 			
 			_machine.DefineTransition<StartupState, LoadMainMenuState>(NovelGameState.LoadMainMenu);
 			_machine.DefineTransition<LoadMainMenuState, MainMenuState>(NovelGameState.MainMenu);
+			_machine.DefineTransition<MainMenuState, LoadNewGameState>(NovelGameState.LoadNewGame);
 		}
 
 		private void Subscribe()
@@ -43,6 +48,7 @@ namespace GameModule.StateMachineModule
 				_startupState,
 				_loadMainMenu,
 				_mainMenu,
+				_loadNewNovel,
 			};
 			
 			foreach (NovelState state in _novelStates)

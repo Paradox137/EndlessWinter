@@ -11,21 +11,21 @@ namespace GameModule.StateMachineModule
 {
 	public class MainMenuState : NovelState
 	{
-		private readonly SaveLoadSystem _saveLoadSystem;
-		private readonly MenuAction _menuAction;
+		private readonly PlayerSaveLoadSystem _saveLoadSystem;
+		private readonly MenuAction _gameStartAction;
 		
 		[Inject]
-		public MainMenuState(SaveLoadSystem __saveLoadSystem,  MenuAction __menuAction) : base()
+		public MainMenuState(PlayerSaveLoadSystem __saveLoadSystem,  MenuAction __gameStartAction) : base()
 		{
 			_saveLoadSystem = __saveLoadSystem;
-			_menuAction = __menuAction;
+			_gameStartAction = __gameStartAction;
 		}
 
 		public override void Enter()
 		{
 			base.Enter();
 
-			_menuAction.Action += ChooseGame;
+			_gameStartAction.Action += ChooseGame;
 			
 			WindowsCollection.Get<MainMenuWindow>().Show(_saveLoadSystem.GetPlayerData().IsGameStarted);
 		}
@@ -33,15 +33,16 @@ namespace GameModule.StateMachineModule
 		private void ChooseGame(MenuLogicAction __item)
 		{
 			Debug.Log("Choose " + __item);
-
-			PlayerData pd = _saveLoadSystem.GetPlayerData();
-			pd.IsGameStarted = true;
-			_saveLoadSystem.Save(pd);
+			
+			_saveLoadSystem.PlayerData.IsGameStarted = true;
+			_saveLoadSystem.Save();
+			
+			onNextState?.Invoke(NovelGameState.LoadNewGame);
 		}
 		
 		public override void Exit()
 		{
-			_menuAction.Action -= ChooseGame;
+			_gameStartAction.Action -= ChooseGame;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿namespace GameModule.PlayerModule
 {
-	public class SaveLoadService
+	public class NovelLoadService
 	{
 		
 	}
