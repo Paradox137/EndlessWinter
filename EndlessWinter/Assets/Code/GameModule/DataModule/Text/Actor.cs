@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GameModule.DataModule.Image;
 
 namespace GameModule.DataModule
 {
@@ -10,7 +11,7 @@ namespace GameModule.DataModule
 		public Queue<string> positiveReplicas;
 		public Queue<string> negativeReplicas;
 		public Queue<string> endReplicas;
-
+		
 		public Actor(ActorType __actorName, Queue<string> __startReplicas, Queue<string> __positiveReplicas, Queue<string> __negativeReplicas, Queue<string> __endReplicas)
 		{
 			endReplicas = __endReplicas;

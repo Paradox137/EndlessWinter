@@ -2,8 +2,8 @@
 {
 	public enum ActorType
 	{
-		Player,
-		Semen,
-		Veronika,
+		Player = 0,
+		Semen = 0,
+		Veronika = 0,
 	}
 }
