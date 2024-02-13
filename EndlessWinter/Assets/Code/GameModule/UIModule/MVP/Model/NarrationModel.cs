@@ -1,7 +1,7 @@
 ﻿namespace GameModule.UIModule.MVP.Model
 {
-	public class NarrationModel
+	public class TextModel
 	{
-		public 
+		 
 	}
 }
