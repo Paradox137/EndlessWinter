@@ -1,6 +1,7 @@
 ﻿using GameModule.BusinessLogicModule.PlayerUIActions;
 using GameModule.PlayerModule;
 using GameModule.SettingsModule;
+using GameModule.StorageModule;
 using SharedModule.ServiceModule.SceneModule;
 using SharedModule.StateMachineModule;
 using UnityEngine;
@@ -16,8 +17,12 @@ namespace GameModule.StateMachineModule
 		
 		public override void InstallBindings()
 		{
-			NovelLoadService novelLoadService = new NovelLoadService();
+			NovelStorage novelStorage = new NovelStorage();
+			
+			NovelLoadService novelLoadService = new NovelLoadService(novelStorage, _chapterLoadSettings);
 			MenuAction menuAction = new MenuAction();
+
+			Container.Bind<NovelStorage>().FromInstance(novelStorage).AsSingle().CopyIntoAllSubContainers();
 			Container.Bind<MenuAction>().FromInstance(menuAction).AsSingle();
 			Container.Bind<NovelLoadService>().FromInstance(novelLoadService).AsSingle();
 				
@@ -26,7 +31,7 @@ namespace GameModule.StateMachineModule
 			Container.Bind<StartupState>().AsSingle();
 			Container.Bind<LoadMainMenuState>().AsSingle().WithArguments(_settingsLoadingMainScene);
 			Container.Bind<MainMenuState>().AsSingle();
-			Container.Bind<LoadNewGameState>().AsSingle().WithArguments(_settingsLoadingNewNovelScene,_chapterLoadSettings);
+			Container.Bind<LoadNewGameState>().AsSingle().WithArguments(_settingsLoadingNewNovelScene);
 
 			Container.BindInterfacesAndSelfTo<NovelStateMachine>().AsSingle();
 		}

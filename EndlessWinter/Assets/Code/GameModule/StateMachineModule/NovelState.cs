@@ -15,7 +15,7 @@ namespace GameModule.StateMachineModule
 		
 		public virtual void Enter()
 		{
-			Debug.Log($"{nameof(Enter)}: {GetType().Name}");
+ 			Debug.Log($"{nameof(Enter)}: {GetType().Name}");
 		}
 		public virtual void Exit()
 		{

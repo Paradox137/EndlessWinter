@@ -19,7 +19,7 @@ namespace GameModule.PlayerModule
 		//private DateTime _lastSaveTime;
 		
 		private readonly PlayerData _playerData;
-		private const string KEY_SAVE = "save8";
+		private const string KEY_SAVE = "save9";
 		
 		public PlayerData PlayerData => _playerData;
 

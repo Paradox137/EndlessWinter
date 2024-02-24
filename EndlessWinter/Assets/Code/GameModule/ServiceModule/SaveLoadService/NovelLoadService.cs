@@ -1,23 +1,43 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using GameModule.SettingsModule;
 using UnityEngine;
 using Dre0Dru.AddressableAssets;
 using Dre0Dru.AddressableAssets.Downloaders;
 using Dre0Dru.AddressableAssets.Loaders;
+using GameModule.DataModule;
+using GameModule.StorageModule;
+using Newtonsoft.Json;
 
 namespace GameModule.PlayerModule
 {
 	public class NovelLoadService
 	{
-		public NovelLoadService()
+		private readonly NovelStorage _novelStorage;
+		private readonly IAssetsReferenceLoader<TextAsset> _loader;
+		private readonly ChapterLoadSettings _chapterLoadSettings;
+		public NovelLoadService(NovelStorage ___novelStorage, ChapterLoadSettings __chapterLoadSettings)
 		{
+			_novelStorage = ___novelStorage;
+			_chapterLoadSettings = __chapterLoadSettings;
 			
+			_loader = new AssetsReferenceLoader<TextAsset>();  
 		}
 
-		public async UniTask LoadPack(IAssetsReferenceLoader<TextAsset> __loader, ChapterLoadSettings __chapterSettings)
+
+		public Task PlaceInStorage()
 		{
-			UniTask<TextAsset[]> r = __loader.LoadAssetsAsync(__chapterSettings.TestAssetBig);
-			UniTask<TextAsset[]> z = __loader.LoadAssetsAsync(__chapterSettings.TestAssetActor);
+			TextAsset text = _loader.GetAsset(_chapterLoadSettings.TestAssetActor);
+			
+			_novelStorage.SetNewActor(text);
+
+			return Task.CompletedTask;
+		}
+
+		public async UniTask LoadPack()
+		{
+			UniTask<TextAsset[]> r = _loader.LoadAssetsAsync(_chapterLoadSettings.TestAssetBig);
+			UniTask<TextAsset[]> z = _loader.LoadAssetsAsync(_chapterLoadSettings.TestAssetActor);
 			
 			int x = 0;
 			while (r.Status != UniTaskStatus.Succeeded && z.Status != UniTaskStatus.Succeeded)
@@ -39,8 +59,10 @@ namespace GameModule.PlayerModule
 			
 			//await downloadPack.StartDownloadAsync();
 			
-			Debug.Log(__loader.IsAssetLoaded(__chapterSettings.TestAssetActor));
+			
+			Debug.Log(_loader.IsAssetLoaded(_chapterLoadSettings.TestAssetActor));
 		}
+		
 		
 		private void DisplayStatus(AssetsDownloadStatus status)  
 		{
