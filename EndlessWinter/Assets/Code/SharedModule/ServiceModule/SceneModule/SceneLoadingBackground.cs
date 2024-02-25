@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameModule.DataModule;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace SharedModule.ServiceModule.SceneModule

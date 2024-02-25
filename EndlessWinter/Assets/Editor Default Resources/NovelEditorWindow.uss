@@ -1,0 +1,28 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.chapters-box {
+    background-color: rgba(255,255,255,0.11);
+    width: 125px;
+    border-right-width: 5px;
+    border-color: #1e1e1e;
+    position: absolute;
+    flex-direction: row;
+    padding-bottom: 1000px;
+}
+.chapters-listview {
+    font-size: 12px;
+    width: 125px;
+    color: whitesmoke;
+}
+
+.chapters-scrollview {
+    
+}
+.chapters-items {
+    cursor: link;
+    -unity-text-align: middle-center;
+}

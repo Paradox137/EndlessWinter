@@ -19,6 +19,8 @@ namespace GameModule.UIModule.MVP.Presenter
             return __type switch
             {
                 TextDataType.Narration => Storage._actor.startReplicas.Peek(),
+                
+                //todo: dataconverter по ref
                 TextDataType.ActorName => Storage._actor.actorName,
                 _ => null
             };

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GameModule.DataModule.Image;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -7,16 +8,17 @@ namespace GameModule.DataModule
 {
 	public class DialogueFlow
 	{
-		public Queue<KeyValuePair<ActorType, ActorImage>> startFlow;
-		public Queue<KeyValuePair<ActorType, ActorImage>> positiveFlow;
-		public Queue<KeyValuePair<ActorType, ActorImage>> negativeFlow;
-		public Queue<KeyValuePair<ActorType, ActorImage>> endFlow;
+		public Queue<KeyValuePair<ActorType, ActorInfo>> startFlow;
+		public Queue<KeyValuePair<ActorType, ActorInfo>> positiveFlow;
+		public Queue<KeyValuePair<ActorType, ActorInfo>> negativeFlow;
+		public Queue<KeyValuePair<ActorType, ActorInfo>> endFlow;
 
 		public uint currentFlow;
+		public uint actorQuestNumber;
 		
-		public Dictionary<uint, MainImage> imageFlow;
-		public DialogueFlow( Queue<KeyValuePair<ActorType, ActorImage>>__endFlow,  Queue<KeyValuePair<ActorType, ActorImage>> __negativeFlow, 
-			Queue<KeyValuePair<ActorType, ActorImage>> __positiveFlow,  Queue<KeyValuePair<ActorType, ActorImage>> __startFlow, Dictionary<uint, MainImage> __imageFlow)
+		public Dictionary<uint, UnityEngine.UIElements.Image> imageFlow;
+		public DialogueFlow( Queue<KeyValuePair<ActorType, ActorInfo>>__endFlow,  Queue<KeyValuePair<ActorType, ActorInfo>> __negativeFlow, 
+			Queue<KeyValuePair<ActorType, ActorInfo>> __positiveFlow,  Queue<KeyValuePair<ActorType, ActorInfo>> __startFlow, Dictionary<uint, UnityEngine.UIElements.Image> __imageFlow)
 		{
 			currentFlow = 0;
 			
@@ -25,6 +27,12 @@ namespace GameModule.DataModule
 			positiveFlow = __positiveFlow;
 			startFlow = __startFlow;
 			imageFlow = __imageFlow;
+		}
+
+		public struct ActorInfo
+		{
+			public bool IsQuest;
+			public UnityEngine.UIElements.Image Image;
 		}
 	}
 }
