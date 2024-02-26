@@ -7,7 +7,7 @@
 .chapters-box {
     background-color: rgba(255,255,255,0.11);
     width: 125px;
-    border-right-width: 5px;
+    border-right-width: 2px;
     border-color: #1e1e1e;
     position: absolute;
     flex-direction: row;
@@ -25,4 +25,29 @@
 .chapters-items {
     cursor: link;
     -unity-text-align: middle-center;
+}
+
+
+.chapter-parameters-box {
+    background-color: rgba(255,255,255,0.11);
+    width: 125px;
+    height: 500px;
+    border-right-width: 2px;
+    border-color: #1e1e1e;
+    margin-left: 123px;
+    padding-bottom: 1000px;
+    flex-direction: row;
+}
+
+.characters-treeview {
+    --unity-item-height: 16;
+    height: 200px;
+}
+
+.text-box-mainContainer {
+    width: 1600px;
+    height: 1000px;
+    margin-left: 248px;
+    flex-direction: row;
+    position: absolute;
 }
