@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6aaf91ae0724aad88873198ef0940d5, type: 3}
-  m_Name: DialogueFlowConfig
+  m_Script: {fileID: 11500000, guid: e6242ab29ac64afba19c7e12cfba7cf0, type: 3}
+  m_Name: ChapterFlowConfig
   m_EditorClassIdentifier: 
-  currentFlow: 0
-  actorQuestNumber: 0
+  DialogueFlowConfigs:
+  - {fileID: 11400000, guid: 0d6704c9aa225ca409ca13bd74641c60, type: 2}
