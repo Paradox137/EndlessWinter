@@ -101,14 +101,13 @@ namespace Editor
 			var charactersItems = new List<TreeViewItemData<string>>(1);
 
 			var treeViewSubCharactersData = new List<TreeViewItemData<string>>(5);
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(0, "Narration"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(1, "Igor"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(2, "AnnaVladimitovna"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(3, "Kat9"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(4, "Nast9"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(5, "Ton9"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(6, "Veronika"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(7, "Alisa"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(0, "Oleg"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(1, "AnnaVladimitovna"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(2, "Kat9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(3, "Nast9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(4, "Ton9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(5, "Veronika"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(6, "Alisa"));
 
 			var treeViewItemData = new TreeViewItemData<string>(110, "Characters", treeViewSubCharactersData);
 			charactersItems.Add(treeViewItemData);
@@ -210,7 +209,6 @@ namespace Editor
 					}
 				}
 				_rootActor = new Actor(_currentCharacter, startReplicas, positiveReplicas, negativeReplicas, endReplicas);
-				Debug.Log(_rootActor.startReplicas.Dequeue());
 			}
 
 			// Кнопка для сериализации и сохранения в файле JSON

@@ -1,14 +1,13 @@
 ﻿namespace GameModule.DataModule
 {
 	public enum ActorType : uint
-	{ 
-		Narration = 0,
-		Igor = 1,
-		AnnaVladimitovna = 2,
-		Kat9 = 3,
-		Nast9 = 4,
-		Ton9 = 5,
-		Veronika = 6,
-		Alisa = 7,
+	{
+		Oleg = 0,
+		AnnaVladimitovna = 1,
+		Kat9 = 2,
+		Nast9 = 3,
+		Ton9 = 4,
+		Veronika = 5,
+		Alisa = 6,
 	}
 }
