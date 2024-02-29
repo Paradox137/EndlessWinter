@@ -20,8 +20,8 @@ namespace GameModule.UIModule.MVP.Presenter
             {
                 TextDataType.Narration => Storage._actor.startReplicas.Peek(),
                 
-                //todo: dataconverter по ref
-                TextDataType.ActorName => Storage._actor.actorName,
+                //todo: dataconverter по ref dataextinsions 
+                TextDataType.ActorName => Storage._actor.actorName.ToString(),
                 _ => null
             };
         }

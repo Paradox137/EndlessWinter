@@ -15,8 +15,7 @@ namespace Editor
 	{
 		private List<string>[] textLists = new List<string>[4];
 		private string[] newTexts = new string[4];
-	//	private List<string>[] savedTextList = new List<string>[4];
-		
+
 		private Vector2 scrollPosition = Vector2.zero;
 
 		private VisualElement _root;
@@ -29,7 +28,7 @@ namespace Editor
 		private TreeView _charactersTreeView;
 
 		private int _currentChapter;
-		private int _currentCharacter;
+		private ActorType _currentCharacter;
 
 		private Actor _rootActor;
 		private void OnEnable()
@@ -93,7 +92,7 @@ namespace Editor
 			_chaptersListView.hierarchy.Children().FirstOrDefault()?.AddToClassList("chapters-scrollview");
 			_root.Add(chaptersLabel);
 		}
-
+		
 		private void CreateCharacters()
 		{
 			_chapterParametersBox = new Box();
@@ -102,11 +101,14 @@ namespace Editor
 			var charactersItems = new List<TreeViewItemData<string>>(1);
 
 			var treeViewSubCharactersData = new List<TreeViewItemData<string>>(5);
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(0, "Player"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(1, "Avtor"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(2, "Quest"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(3, "Anna"));
-			treeViewSubCharactersData.Add(new TreeViewItemData<string>(4, "Elena"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(0, "Narration"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(1, "Igor"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(2, "AnnaVladimitovna"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(3, "Kat9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(4, "Nast9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(5, "Ton9"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(6, "Veronika"));
+			treeViewSubCharactersData.Add(new TreeViewItemData<string>(7, "Alisa"));
 
 			var treeViewItemData = new TreeViewItemData<string>(110, "Characters", treeViewSubCharactersData);
 			charactersItems.Add(treeViewItemData);
@@ -130,9 +132,7 @@ namespace Editor
 
 			_charactersTreeView.AddToClassList("characters-treeview");
 			_chapterParametersBox.Add(_charactersTreeView);
-
-			_charactersTreeView.visible = false;
-			_chapterParametersBox.visible = false;
+			
 			_root.Add(_chapterParametersBox);
 		}
 
@@ -188,8 +188,6 @@ namespace Editor
 			// Кнопка для добавления всех введенных полей
 			if (GUILayout.Button("Save All"))
 			{
-				string actorName = "Player";
-
 				Queue<string> startReplicas = new Queue<string>();
 				Queue<string> positiveReplicas = new Queue<string>();
 				Queue<string> negativeReplicas = new Queue<string>();
@@ -211,7 +209,7 @@ namespace Editor
 							endReplicas.Enqueue(textLists[i][j]);
 					}
 				}
-				_rootActor = new Actor(actorName, startReplicas, positiveReplicas, negativeReplicas, endReplicas);
+				_rootActor = new Actor(_currentCharacter, startReplicas, positiveReplicas, negativeReplicas, endReplicas);
 				Debug.Log(_rootActor.startReplicas.Dequeue());
 			}
 
@@ -252,10 +250,7 @@ namespace Editor
 		{
 			Debug.Log("Chapter " + _chaptersListView.selectedIndex);
 
-			_currentCharacter = _chaptersListView.selectedIndex;
-
-			_charactersTreeView.visible = true;
-			_chapterParametersBox.visible = true;
+			_currentChapter = _chaptersListView.selectedIndex;
 		}
 
 		private void OnCharacterClick(object __sender)
@@ -267,7 +262,7 @@ namespace Editor
 
 			Debug.Log("Character " + insideIndex);
 
-			_currentCharacter = insideIndex;
+			_currentCharacter = (ActorType)insideIndex;
 		}
 		
 	}
