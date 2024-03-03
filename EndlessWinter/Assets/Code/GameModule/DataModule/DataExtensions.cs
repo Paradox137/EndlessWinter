@@ -7,16 +7,16 @@ namespace GameModule.DataModule
 {
 	public static class DataExtensions
 	{
-		private static Queue<KeyValuePair<ActorType, ActorInfo>> _variableQueue;
+		/*private static Queue<KeyValuePair<ActorType, Sprite>> _variableQueue;
 		private static Dictionary<uint, Texture> _variableDictionary;
 		
-		public static Queue<KeyValuePair<ActorType, ActorInfo>> ToQueue(this DialogueCustomDictionary __dialogueCustomQueue)
+		public static Queue<KeyValuePair<ActorType, Sprite>> ToQueue(this DialogueCustomDictionary __dialogueCustomQueue, List<Sprite> __sprites)
 		{
-			_variableQueue = new Queue<KeyValuePair<ActorType, ActorInfo>>(__dialogueCustomQueue.Items.Length);
+			_variableQueue = new Queue<KeyValuePair<ActorType, Sprite>>(__dialogueCustomQueue.Items.Length);
 
 			foreach (DialogueItem item in __dialogueCustomQueue.Items)
 			{
-				_variableQueue.Enqueue(new KeyValuePair<ActorType, ActorInfo>(item.ActorType, item.ActorInfo));
+				//_variableQueue.Enqueue(new KeyValuePair<ActorType, Sprite>(item.ActorType, item.ActorInfo));
 			}
 
 			return _variableQueue;
@@ -28,10 +28,10 @@ namespace GameModule.DataModule
 			
 			foreach (ImageFlowItem item in __dialogueCustomQueue.Items)
 			{
-				_variableDictionary.Add(item.Flow, item.ImageTexture);
+				//_variableDictionary.Add(item.Flow, item.ImageTexture);
 			}
 
 			return _variableDictionary;
-		}
+		}*/
 	}
 }

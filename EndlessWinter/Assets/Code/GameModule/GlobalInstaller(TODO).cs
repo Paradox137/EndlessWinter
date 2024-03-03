@@ -1,4 +1,5 @@
 ﻿using GameModule.CollectionModule;
+using GameModule.ConfigsModule;
 using GameModule.PlayerModule;
 using GameModule.SettingsModule;
 using UnityEngine;
@@ -8,7 +9,7 @@ namespace GameModule
 {
 	public class GlobalInstaller_TODO_ : MonoInstaller
 	{
-		[SerializeField] private PlayerDataSettings _playerSettings;
+		[SerializeField] private PlayerDataConfig _playerSettings;
 		public override void InstallBindings()
 		{
 			PlayerSaveLoadSystem saveLoadSystem = new PlayerSaveLoadSystem(_playerSettings.PerkEntities);

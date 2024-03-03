@@ -23,10 +23,10 @@ namespace GameModule.PlayerModule
 	{
 		private readonly NovelStorage _novelStorage;
 		private readonly IAssetsReferenceLoader<TextAsset> _loader;
-		private readonly ChapterLoadSettings _chapterLoadSettings;
+		private readonly ChapterLoadConfig _chapterLoadSettings;
 
 		private TextAsset _textAsset;
-		public NovelLoadService(NovelStorage ___novelStorage, ChapterLoadSettings __chapterLoadSettings)
+		public NovelLoadService(NovelStorage ___novelStorage, ChapterLoadConfig __chapterLoadSettings)
 		{
 			_novelStorage = ___novelStorage;
 			_chapterLoadSettings = __chapterLoadSettings;

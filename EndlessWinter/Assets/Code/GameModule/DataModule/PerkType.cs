@@ -13,6 +13,6 @@
 		Generosity,
 		Bravery,
 		Determination,
-		XXX,
+		Coolness,
 	}
 }

@@ -19,8 +19,8 @@ namespace GameModule.ExtensionsModule
 			{ PerkType.Honesty,        "Честность"},
 			{ PerkType.Generosity,     "Щедрость"},
 			{ PerkType.Bravery,        "Xрабрость"},
-			{ PerkType.Determination,  "Определение"},
-			{ PerkType.XXX,            "XXX"},
+			{ PerkType.Determination,  "Решимость"},
+			{ PerkType.Coolness,       "Крутость"},
 		};
 
 		public static string GetPerkDescription(this PerkType __characteristic)

@@ -18,12 +18,12 @@ namespace GameModule.StateMachineModule
 
 		[Inject]
 		public LoadNewGameState(SceneLoader __sceneLoader, SceneLoadingImmediately __settingsLoading, 
-			NovelLoadService ___novelLoadService) 
+			NovelLoadService __novelLoadService) 
 			: base()
 		{
 			_sceneLoader = __sceneLoader;
 			_settingsLoading = __settingsLoading;
-			_novelLoadService = ___novelLoadService;
+			_novelLoadService = __novelLoadService;
 		}
 
 

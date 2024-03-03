@@ -16,9 +16,9 @@ namespace GameModule.ServiceModule
     public class TextWriterService
     {
         private WriteMode _writeMode;
-        private readonly CharsTimeDelaySettings _charsTimeDelaySettings;
+        private readonly CharsTimeDelayConfig _charsTimeDelaySettings;
 
-        public TextWriterService(CharsTimeDelaySettings __charsTimeDelaySettings)
+        public TextWriterService(CharsTimeDelayConfig __charsTimeDelaySettings)
         {
             _charsTimeDelaySettings = __charsTimeDelaySettings;
             _writeMode = WriteMode.NormalMode;

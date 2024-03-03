@@ -8,7 +8,7 @@ namespace GameModule.ServiceModule.SceneModule
 {
     public class TextWriterInstaller : MonoInstaller
     {
-        [SerializeField] private CharsTimeDelaySettings _charsTimeDelaySettings;
+        [SerializeField] private CharsTimeDelayConfig _charsTimeDelaySettings;
         public override void InstallBindings()
         {
             Container.Bind<TextWriterService>().FromNew().AsSingle().WithArguments(_charsTimeDelaySettings).CopyIntoAllSubContainers();

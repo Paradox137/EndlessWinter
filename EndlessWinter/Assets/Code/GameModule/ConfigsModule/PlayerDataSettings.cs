@@ -1,13 +1,11 @@
 ﻿using System.Collections.Generic;
 using GameModule.EntityModule;
-using GameModule.PlayerModule;
 using UnityEngine;
-using Zenject;
 
-namespace GameModule.SettingsModule
+namespace GameModule.ConfigsModule
 {
-	[CreateAssetMenu(fileName = "PlayerSettings", menuName = "MyAssets/Game/Settings/PlayerSettings")]
-	public class PlayerDataSettings : ScriptableObject	
+	[CreateAssetMenu(fileName = "PlayerConfig", menuName = "MyAssets/Game/Settings/PlayerConfig")]
+	public class PlayerDataConfig : ScriptableObject	
 	{
 		public List<PerkEntity> PerkEntities;
 	}

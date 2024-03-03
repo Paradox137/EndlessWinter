@@ -13,7 +13,7 @@ namespace GameModule.StateMachineModule
 	{
 		[SerializeField] SceneLoadingImmediately _settingsLoadingMainScene;
 		[SerializeField] SceneLoadingImmediately _settingsLoadingNewNovelScene;
-		[SerializeField] ChapterLoadSettings _chapterLoadSettings;
+		[SerializeField] ChapterLoadConfig _chapterLoadSettings;
 		
 		public override void InstallBindings()
 		{

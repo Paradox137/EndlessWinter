@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameModule.DataModule;
+using GameModule.PlayerModule;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.Serialization;
+using UnityEngine.TextCore.Text;
 
 namespace GameModule.ConfigsModule
 {
@@ -14,50 +17,17 @@ namespace GameModule.ConfigsModule
 		public DialogueCustomDictionary NegativeFlow;
 		public DialogueCustomDictionary EndFlow;
 		
-		public uint actorQuestNumber;
 		public ImageFlowCustomDictionary ImageFlow;
+		
+		public ChoiceInfluenceCustomDictionary ChoiceInfluence;
+		public uint ActorQuestNumber;
+	}
 
-		public DialogueFlow GenerateDialogueFlowClass()
-		{
-			return new DialogueFlow(
-				__endFlow: EndFlow.ToQueue(),
-				__negativeFlow: NegativeFlow.ToQueue(),
-				__positiveFlow: PositiveFlow.ToQueue(),
-				__startFlow: StartFlow.ToQueue(),
-				__imageFlow: ImageFlow.ToDictionary(),
-				__actorQuestNumber: actorQuestNumber);
-		}
-	}
+	[Serializable] public struct DialogueCustomDictionary { public DialogueItem[] Items; }
+	[Serializable] public struct ImageFlowCustomDictionary { public ImageFlowItem[] Items; }
+	[Serializable] public struct ChoiceInfluenceCustomDictionary { public ChoiceInfluenceItem[] PositiveChoice; public ChoiceInfluenceItem[] NegativeChoice; }
 	
-	[Serializable]
-	public struct DialogueCustomDictionary
-	{
-		public DialogueItem[] Items;
-	}
-	
-	[Serializable]
-	public struct DialogueItem
-	{
-		public ActorType ActorType;
-		public ActorInfo ActorInfo;
-	}
-	
-	[Serializable]
-	public struct ActorInfo
-	{
-		public Texture ImageTexture;
-	}
-	
-	[Serializable]
-	public struct ImageFlowCustomDictionary
-	{
-		public ImageFlowItem[] Items;
-	}
-	
-	[Serializable]
-	public struct ImageFlowItem
-	{
-		public uint Flow;
-		public Texture ImageTexture;
-	}
+	[Serializable] public class ChoiceInfluenceItem { public PerkType Perk; public int Influence; }
+	[Serializable] public struct ImageFlowItem { public AssetReferenceT<SpriteAsset> ImageTexture; }
+	[Serializable] public struct DialogueItem { public ActorType ActorType; public AssetReferenceT<SpriteAsset> ActorInfo; }
 }
