@@ -89,7 +89,7 @@ namespace GameModule.PlayerModule
 			Debug.Log(__obj.text);
 			_textAsset = __obj;
 		}
-		private async void OnCompleted(AsyncOperationHandle<IList<IResourceLocation>> __obj)
+	/*	private async void OnCompleted(AsyncOperationHandle<IList<IResourceLocation>> __obj)
 		{
 			foreach (IResourceLocation resource in __obj.Result)
 			{
@@ -102,7 +102,7 @@ namespace GameModule.PlayerModule
 				Debug.Log(_loader.IsAssetLoaded(_chapterLoadSettings.TestAssetActor));
 
 			}
-		}
+		}*/
 
 
 		private void DisplayStatus(AssetsDownloadStatus status)  

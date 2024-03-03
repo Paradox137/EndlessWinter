@@ -1,0 +1,10 @@
+{
+  "actorName": 2,
+  "startReplicas": [
+    "Да, привет. Я Катя. А ты?",
+    "Нет, это мой первый раз. Немного волнительно."
+  ],
+  "positiveReplicas": [],
+  "negativeReplicas": [],
+  "endReplicas": []
+}

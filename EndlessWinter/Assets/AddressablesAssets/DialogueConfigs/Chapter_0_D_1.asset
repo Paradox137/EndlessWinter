@@ -16,22 +16,72 @@ MonoBehaviour:
     Items:
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
   PositiveFlow:
     Items: []
   NegativeFlow:
     Items: []
   EndFlow:
     Items: []
-  actorQuestNumber: 0
   ImageFlow:
-    Items: []
+    Items:
+    - ImageTexture:
+        m_AssetGUID: b75d9cf9df7116844beadd44e82476ee
+        m_SubObjectName: 0
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 0
+    - ImageTexture:
+        m_AssetGUID: 63d23a10ebfee574f8b1af1fbd625f75
+        m_SubObjectName: 1
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 0
+    - ImageTexture:
+        m_AssetGUID: 5d13620c79b681146a7a8933899f9db7
+        m_SubObjectName: 2
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 0
+    - ImageTexture:
+        m_AssetGUID: 83eea8821b0868c4ab4011e2dea2e222
+        m_SubObjectName: 3
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 0
+  ChoiceInfluence:
+    PositiveChoiceText: 
+    NegativeChoiceText: 
+    PositiveChoice: []
+    NegativeChoice: []
+  ActorQuestNumber: 999
+  ActorsTexts:
+  - m_AssetGUID: dbbf4c67115d0024aa23b27f6390fc41
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

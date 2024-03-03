@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Chapter1.3
+  m_EditorClassIdentifier: 
+  m_GroupName: Chapter1.3
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cda4792022d84f448bb7c688ff862ded
+  m_SerializeEntries:
+  - m_GUID: 50c7524bfd095f84aad40d72d1cd4e66
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.3/0.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef407049b7646a6469f91e9c8d66d478
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.3/1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e12b5cc7baa4fb4697fd0379698cb95
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.3/Gamer.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b309bacd4d9617345b87840f45cca76c
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.3/AnnaVladimirovna.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4071d146ff5b71b47bef768228438bc2
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.3/San9.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b1b6116f5993d640ae22e810a33e101
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.3/Veronika.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f70aeb5b8cee164c8d6ca3fb7085741
+    m_Address: Assets/AddressablesAssets/DialogueConfigs/Chapter_1_D_3.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - config
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 366196af4a4bad7438e6ef1f99266537, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5c7e52fe46c7ba84e8396bc56c04c573, type: 2}
+    - {fileID: 11400000, guid: 2bcc57c6edcf5414c8c44fb0db7a1672, type: 2}

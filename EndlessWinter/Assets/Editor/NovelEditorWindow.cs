@@ -146,9 +146,14 @@ namespace Editor
 			{
 				GUILayout.BeginVertical();
 
-				// Поле для ввода текста
-				newTexts[i] = EditorGUILayout.TextField("Text " + (i + 1) + ":", newTexts[i]);
-
+				newTexts[i] = i switch
+				{
+					0 => EditorGUILayout.TextField("Start " + (i + 1) + ":", newTexts[i]),
+					1 => EditorGUILayout.TextField("Positive " + (i + 1) + ":", newTexts[i]),
+					2 => EditorGUILayout.TextField("Negative " + (i + 1) + ":", newTexts[i]),
+					3 => EditorGUILayout.TextField("End " + (i + 1) + ":", newTexts[i]),
+					_ => newTexts[i]
+				};
 				GUILayout.Space(5);
 
 				// Кнопка для добавления элемента в список

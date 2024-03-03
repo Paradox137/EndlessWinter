@@ -1,0 +1,10 @@
+{
+  "actorName": 3,
+  "startReplicas": [
+    "Привет, Игорь. Неплохо, но я ещё не всё здесь исследовала.",
+    "Спасибо, я тоже на это надеюсь."
+  ],
+  "positiveReplicas": [],
+  "negativeReplicas": [],
+  "endReplicas": []
+}

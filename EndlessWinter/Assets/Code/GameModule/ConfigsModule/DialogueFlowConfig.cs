@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Serialization;
 using UnityEngine.TextCore.Text;
+using TextAsset = UnityEngine.TextAsset;
 
 namespace GameModule.ConfigsModule
 {
@@ -21,13 +22,21 @@ namespace GameModule.ConfigsModule
 		
 		public ChoiceInfluenceCustomDictionary ChoiceInfluence;
 		public uint ActorQuestNumber;
+
+		public List<AssetReferenceT<TextAsset>> ActorsTexts;
 	}
 
 	[Serializable] public struct DialogueCustomDictionary { public DialogueItem[] Items; }
+	[Serializable] public struct DialogueItem { public ActorType ActorType; public AssetReferenceT<Sprite> ActorInfo; }
 	[Serializable] public struct ImageFlowCustomDictionary { public ImageFlowItem[] Items; }
-	[Serializable] public struct ChoiceInfluenceCustomDictionary { public ChoiceInfluenceItem[] PositiveChoice; public ChoiceInfluenceItem[] NegativeChoice; }
+	[Serializable] public struct ImageFlowItem { public AssetReferenceT<Sprite> ImageTexture; public uint viewPhase; }
 	
 	[Serializable] public class ChoiceInfluenceItem { public PerkType Perk; public int Influence; }
-	[Serializable] public struct ImageFlowItem { public AssetReferenceT<SpriteAsset> ImageTexture; }
-	[Serializable] public struct DialogueItem { public ActorType ActorType; public AssetReferenceT<SpriteAsset> ActorInfo; }
+	[Serializable] public struct ChoiceInfluenceCustomDictionary
+	{
+		public string PositiveChoiceText;
+		public string NegativeChoiceText;
+		public ChoiceInfluenceItem[] PositiveChoice;
+		public ChoiceInfluenceItem[] NegativeChoice;
+	}
 }

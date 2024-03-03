@@ -16,22 +16,211 @@ MonoBehaviour:
     Items:
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
     - ActorType: 0
       ActorInfo:
-        ImageTexture: {fileID: 0}
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: 806184436964ffb4485e1260571e8783
+        m_SubObjectName: san9_happy
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 806184436964ffb4485e1260571e8783
+        m_SubObjectName: san9_happy
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: 806184436964ffb4485e1260571e8783
+        m_SubObjectName: san9_happy
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 7
+      ActorInfo:
+        m_AssetGUID: c7b91aca93e372d4093f38c00522473e
+        m_SubObjectName: san9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 806184436964ffb4485e1260571e8783
+        m_SubObjectName: san9_happy
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
   PositiveFlow:
-    Items: []
+    Items:
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: cf92d5622eb214c49b4cabb441871062
+        m_SubObjectName: av_smile
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: b40240aa7aba2ba478a76880853617bd
+        m_SubObjectName: ton9_happy
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
   NegativeFlow:
-    Items: []
+    Items:
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 2cb59ac5bdd28ef48ab19f2e69635e26
+        m_SubObjectName: av_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: a78afaf6f4cf24549a87b4aa3b162496
+        m_SubObjectName: ton9_normal
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
   EndFlow:
-    Items: []
-  actorQuestNumber: 0
+    Items:
+    - ActorType: 0
+      ActorInfo:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
   ImageFlow:
-    Items: []
+    Items:
+    - ImageTexture:
+        m_AssetGUID: 5ade6ee2cb0f93246919ddc62380d756
+        m_SubObjectName: 0
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 0
+    - ImageTexture:
+        m_AssetGUID: 0fd1456f7868ad84881531ec3f79ba12
+        m_SubObjectName: 1
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 1
+    - ImageTexture:
+        m_AssetGUID: d08144839120d4f459157548b3d2fcfa
+        m_SubObjectName: 2
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 11
+    - ImageTexture:
+        m_AssetGUID: fb9b057b1bec1a045a0fd24ac52c5b50
+        m_SubObjectName: 3
+        m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        m_EditorAssetChanged: 0
+      viewPhase: 16
+  ChoiceInfluence:
+    PositiveChoiceText: "\u0423\u0447\u0430\u0432\u0441\u0442\u043E\u0432\u0430\u0442\u044C
+      \u0432 \u0442\u0443\u0440\u043D\u0438\u0440\u0435"
+    NegativeChoiceText: "\u041F\u043E\u0435\u0445\u0430\u0442\u044C \u0432 \u0441\u043F\u043E\u043A\u043E\u0439\u0441\u0442\u0432\u0438\u0438"
+    PositiveChoice:
+    - Perk: 9
+      Influence: 5
+    - Perk: 10
+      Influence: 5
+    - Perk: 3
+      Influence: 5
+    NegativeChoice:
+    - Perk: 9
+      Influence: 5
+    - Perk: 6
+      Influence: 5
+  ActorQuestNumber: 16
+  ActorsTexts:
+  - m_AssetGUID: 858ec1de841dd6143a4922b89926f3a8
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: f5bd67b8f9d11e4469fdac62016e0ce6
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1

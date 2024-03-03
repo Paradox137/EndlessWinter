@@ -1,0 +1,9 @@
+{
+  "actorName": 7,
+  "startReplicas": [],
+  "positiveReplicas": [],
+  "negativeReplicas": [
+    "Игорь, ты отлично справишься! Ты у нас лидер по натуре."
+  ],
+  "endReplicas": []
+}

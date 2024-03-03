@@ -18,6 +18,10 @@ namespace GameModule.DataModule
 		private Queue<KeyValuePair<ActorType, Sprite>> _endFlow;
 
 		private uint _currentFlow;
+		
+		// считать без негатив и позитив, для сохранения
+		private uint _mainFlow;
+		
 		private uint _actorQuestNumber;
 		
 		public uint CurrentFlow => _currentFlow;
@@ -42,6 +46,8 @@ namespace GameModule.DataModule
 		
 		public struct ChoiceInfluence
 		{
+			public string PositiveChoiceText;
+			public string NegativeChoiceText;
 			public List<(PerkType, int)> PositiveInfluence;
 			public List<(PerkType, int)> NegativeInfluence;
 		}

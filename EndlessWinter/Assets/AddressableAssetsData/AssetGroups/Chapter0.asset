@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Chapter0
+  m_EditorClassIdentifier: 
+  m_GroupName: Chapter0
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 32659c0ad28e8cf46a9e9af37cf1edc7
+  m_SerializeEntries:
+  - m_GUID: b75d9cf9df7116844beadd44e82476ee
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/0/0.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63d23a10ebfee574f8b1af1fbd625f75
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/0/1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d13620c79b681146a7a8933899f9db7
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/0/3.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83eea8821b0868c4ab4011e2dea2e222
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/0/4.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dbbf4c67115d0024aa23b27f6390fc41
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter0/Gamer.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d6704c9aa225ca409ca13bd74641c60
+    m_Address: Assets/AddressablesAssets/DialogueConfigs/Chapter_0_D_1.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - config
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 366196af4a4bad7438e6ef1f99266537, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4643301d8772154469868c7e84ea69fc, type: 2}
+    - {fileID: 11400000, guid: a656509da9ada10439a04a37c928eb24, type: 2}

@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Chapter1.2
+  m_EditorClassIdentifier: 
+  m_GroupName: Chapter1.2
+  m_Data:
+    m_SerializedData: []
+  m_GUID: aa0fe9dd74adf0349b6c6efc481559f1
+  m_SerializeEntries:
+  - m_GUID: 2698fcf54b0ae9f4984bb2a3221edac3
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.2/1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f8a9d6bb18beb740b3b565c6041a0e7
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.2/2.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1ffd6ef7e87c954bb6fe13229fbae96
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.2/3.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6169aaee465455d44ac62bfcf600cb7a
+    m_Address: "Assets/AddressablesAssets/Sprites/\u043E\u0431\u0448\u0438\u0435
+      \u0444\u043E\u0442\u043E/1.2/4.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75a82e4f49768b648b55133f2f48c1a1
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Gamer.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c1d8091866959e4bbb9853a4963ff79
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/AnnaVladimirovna.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa632a3ed1bdcf846b71c00e5bec950f
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Veronika.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cebbd34d8ea61b842897621d6e74bec8
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Andrey.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fc89cae2f402134280711cebf17056b
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Ton9.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d316e198bb1687a429b1d5abd915fb65
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Nast9.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df8c241b195d4434491ec5a14697231d
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Kat9.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aae584fe00e2bf845b26d4ccc19137c4
+    m_Address: Assets/AddressablesAssets/ActorsConfigs/Chapter1.2/Alisa.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - text
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b445519c15c3515459008ffba047304d
+    m_Address: Assets/AddressablesAssets/DialogueConfigs/Chapter_1_D_2.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - config
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 366196af4a4bad7438e6ef1f99266537, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7aa91555528fd1a4087a6c14f7e6b200, type: 2}
+    - {fileID: 11400000, guid: a095425be5cc75e43ae1ac87cace49fc, type: 2}

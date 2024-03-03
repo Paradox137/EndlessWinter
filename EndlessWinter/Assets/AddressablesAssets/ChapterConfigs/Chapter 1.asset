@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Chapter 1
   m_EditorClassIdentifier: 
   DialogueFlowConfigs:
-  - {fileID: 11400000, guid: 0d6704c9aa225ca409ca13bd74641c60, type: 2}
+  - {fileID: 11400000, guid: 4542dc8ee5cf94a4bafc4fec9cb23a29, type: 2}
+  - {fileID: 11400000, guid: b445519c15c3515459008ffba047304d, type: 2}
+  - {fileID: 11400000, guid: 2f70aeb5b8cee164c8d6ca3fb7085741, type: 2}

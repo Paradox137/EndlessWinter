@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: CharacterImages
+  m_EditorClassIdentifier: 
+  m_GroupName: CharacterImages
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 094b72c08d0a67c4db427d1d6d728919
+  m_SerializeEntries:
+  - m_GUID: e1fa8125f63c4904d95c212fdac75936
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0410\u043D\u0434\u0440\u0435\u0439/andrey1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99d76e4764e56fd47999bbbcc75f74c5
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0410\u043D\u043D\u0430 \u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440\u043E\u0432\u043D\u0430/anvl0.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cb59ac5bdd28ef48ab19f2e69635e26
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0410\u043D\u043D\u0430 \u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440\u043E\u0432\u043D\u0430/anvl2.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf92d5622eb214c49b4cabb441871062
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0410\u043D\u043D\u0430 \u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440\u043E\u0432\u043D\u0430/anvl1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e2b99c9c677d244c84bbb1ecae8cc64
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0412\u0435\u0440\u043E\u043D\u0438\u043A\u0430/veronika1.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7de655e37a1897b4ba026251a4a9f0d9
+    m_Address: "Assets/AddressablesAssets/Sprites/\u041A\u0430\u0442\u044F/kat9_normal.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b0ee265df486cc4682c97835958d64c
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0410\u043D\u0434\u0440\u0435\u0439/andrey_angry.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff85c7fc73d3afb4e8bff158f350b384
+    m_Address: "Assets/AddressablesAssets/Sprites/\u041A\u0430\u0442\u044F/kat91.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99a8bcdfae3e86e4fab0b0ab876c733f
+    m_Address: "Assets/AddressablesAssets/Sprites/\u041A\u0430\u0442\u044F/katz2.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f20d071986c073347a0f19426d9fd260
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0412\u0435\u0440\u043E\u043D\u0438\u043A\u0430/veronika_smile.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7b91aca93e372d4093f38c00522473e
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0421\u0430\u043D\u044F/san90.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2dd3700909d88c146984f53921fb3dc7
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0422\u043E\u043D\u044F/ton9_with_bag.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a78afaf6f4cf24549a87b4aa3b162496
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0422\u043E\u043D\u044F/ton90.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b40240aa7aba2ba478a76880853617bd
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0422\u043E\u043D\u044F/ton91.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e0faa85bed544b448206c61ef5ccba2
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0430\u043B\u0438\u0441\u0430/alisa0.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8129b9e298b8bb844b3ae891fc019b53
+    m_Address: "Assets/AddressablesAssets/Sprites/\u041D\u0430\u0441\u0442\u044F/nast9_normal.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 806184436964ffb4485e1260571e8783
+    m_Address: "Assets/AddressablesAssets/Sprites/\u0421\u0430\u043D\u044F/san9_happy.png"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 366196af4a4bad7438e6ef1f99266537, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2b3bb87d0c0c90e45b6062c21d5c5599, type: 2}
+    - {fileID: 11400000, guid: e9da1d57f79f9644ea3aafec6bdaa782, type: 2}
