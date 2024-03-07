@@ -1,13 +1,11 @@
-# Novel
+# Novel (Демо-проект)
 
-Демо-проект
-
-Визуальная новелла с нодами (развлетвлениями) повествования: начало -> выбор (положительный/отрицательный) -> конец
+## Визуальная новелла с нодами (развлетвлениями) повествования: начало -> выбор (положительный/отрицательный) -> конец
 Управление: нажатием ЛКМ по правой кнопке (область взаимодействия растянута на весь экран), 1ый раз - ускоряется написания текста, 2ой - пишется весь текст сразу, 3ий - новый слайд
 
-Стек: UniTask, Zenject, UnityCustomEditor(UIElements), UniRx, Patterns, Adressables DOTween, Signals (SignalBus), ChatGPT (GPT3.5, GPT4, NovelGPT), Stable Diffusion
+## Стек: UniTask, Zenject, UnityCustomEditor(UIElements), UniRx, Patterns, Adressables DOTween, Signals (SignalBus), ChatGPT (GPT3.5, GPT4, NovelGPT), Stable Diffusion
 
-Коротко про иерархию: 
+## Коротко про иерархию: 
 GameModule:
     Buiseness Module - бизнес логика, StateMachine - для контроля логики и таймлана игры: контроль подгрузки/предзагрузки Adressables новеллы...;
     Collection Module - модуль коллекций
@@ -21,7 +19,7 @@ GameModule:
 SharedModule:
     Содержит аналогичные модули + Customize, является более общим и абстрактным от GameModule, можно переиспользовать в других проектах.
 
-Также:
+## Также:
 Adressables: хранение изображений актёров, конфиги глав, конфиги частей глав, JSON текста персонажей, кастомная загрузка, предзагрузка, выгрузка
 ![image](https://github.com/Paradox137/EndlessWinter/assets/96653165/f5059186-cde4-49ba-958a-16dcd94dff9c)
 
