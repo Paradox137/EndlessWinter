@@ -1,4 +1,5 @@
 ﻿using GameModule.BusinessLogicModule.PlayerUIActions;
+using SharedModule.CollectionModule;
 using SharedModule.UIModule.Window;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,9 +38,7 @@ namespace GameModule.UIModule.Window
 		protected override void OnShow(object[] args)
 		{
 			_gameExists = (bool) args[0];
-			
-			Debug.Log("GameExists = " + _gameExists);
-			
+
 			_continueGameButton.interactable = _gameExists;
 			
 			SubscribeActions(_gameExists);

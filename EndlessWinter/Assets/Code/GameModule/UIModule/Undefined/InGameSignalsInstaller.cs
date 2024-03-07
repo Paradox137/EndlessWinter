@@ -1,16 +1,16 @@
-﻿    using SharedModule.UIModule.Signals;
-using Zenject;
+﻿using Zenject;
 
-namespace GameModule.UIModule.MVP.Installers
+namespace GameModule.UIModule.Undefined
 {
     public class InGameSignalsInstaller : MonoInstaller
     {
         public override void InstallBindings()
         {
-            SignalBusInstaller.Install(Container);
-
+            /*SignalBusInstaller.Install(Container);
+            
             Container.DeclareSignal<NextWriteTextSignal>();
             Container.DeclareSignal<NextStaticTextSignal>();
+            Container.DeclareSignal<GameInitSignal>();*/
         }
     }
 }

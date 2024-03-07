@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using GameModule.UIModule.Window;
+﻿using SharedModule.CollectionModule;
 using UnityEngine;
-using Zenject;
 
 namespace SharedModule.UIModule.Window
 {

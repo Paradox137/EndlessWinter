@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using GameModule.CollectionModule;
-using GameModule.PlayerModule;
+﻿using GameModule.CollectionModule;
+using GameModule.DataModule;
+using SharedModule.CollectionModule;
 using SharedModule.UIModule.Window;
 using UnityEngine;
 using UnityEngine.UI;

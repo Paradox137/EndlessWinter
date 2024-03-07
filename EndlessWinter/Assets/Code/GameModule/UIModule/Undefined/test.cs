@@ -1,8 +1,7 @@
-﻿using SharedModule.UIModule.Signals;
-using UnityEngine;
+﻿using UnityEngine;
 using Zenject;
 
-namespace GameModule.UIModule.MVP.Installers
+namespace GameModule.UIModule.Undefined
 {
     public class test : MonoBehaviour, IInitializable
     {
@@ -18,8 +17,8 @@ namespace GameModule.UIModule.MVP.Installers
         
         public void Initialize()
         {
-           _SignalBus.TryFire(new NextWriteTextSignal());
-           _SignalBus.TryFire(new NextStaticTextSignal());
+           //_SignalBus.TryFire(new NextWriteTextSignal());
+           //_SignalBus.TryFire(new NextStaticTextSignal());
         }
     }
 }

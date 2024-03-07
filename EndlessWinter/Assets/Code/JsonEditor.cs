@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Reflection;
 using System.Linq;
-using GameModule.DataModule;
+using GameModule.DataModule.Novel;
 
 public class JsonEditor : EditorWindow {
 

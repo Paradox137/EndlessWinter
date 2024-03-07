@@ -1,8 +1,9 @@
 ﻿using System;
 using GameModule.ServiceModule;
+using GameModule.ServiceModule.InGameModule;
 using UnityEngine;
 
-namespace GameModule.SettingsModule
+namespace GameModule.ConfigsModule
 {
     [CreateAssetMenu(fileName = "CharsTimeDelayConfig", menuName = "MyAssets/Game/Settings/CharsTimeDelayConfig")]
     public class CharsTimeDelayConfig : ScriptableObject

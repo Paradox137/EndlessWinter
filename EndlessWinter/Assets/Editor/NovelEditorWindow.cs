@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GameModule.DataModule;
+using GameModule.DataModule.Novel;
 using ModestTree;
 using Newtonsoft.Json;
 using UnityEditor;
@@ -155,8 +156,7 @@ namespace Editor
 					_ => newTexts[i]
 				};
 				GUILayout.Space(5);
-
-				// Кнопка для добавления элемента в список
+				
 				if (GUILayout.Button("Add " + (i + 1)))
 				{
 					if (!string.IsNullOrEmpty(newTexts[i]))
@@ -169,8 +169,7 @@ namespace Editor
 						newTexts[i] = "";
 					}
 				}
-
-				// Вывод текста в UI элемент
+				
 				if (textLists[i] != null)
 				{
 					foreach (string text in textLists[i])
@@ -187,9 +186,7 @@ namespace Editor
 			EditorGUILayout.EndScrollView();
 
 			GUILayout.Space(10);
-
 			
-			// Кнопка для добавления всех введенных полей
 			if (GUILayout.Button("Save All"))
 			{
 				Queue<string> startReplicas = new Queue<string>();
@@ -215,8 +212,7 @@ namespace Editor
 				}
 				_rootActor = new Actor(_currentCharacter, startReplicas, positiveReplicas, negativeReplicas, endReplicas);
 			}
-
-			// Кнопка для сериализации и сохранения в файле JSON
+			
 			if (GUILayout.Button("Save Text List as JSON"))
 			{
 				string json = JsonConvert.SerializeObject(_rootActor, Formatting.Indented);
@@ -224,7 +220,6 @@ namespace Editor
 			}
 			GUILayout.Space(15);
 			
-			// Кнопка для очистки всех полей
 			if (GUILayout.Button("Clear All Text Fields"))
 			{
 				for (int i = 0; i < 4; i++)

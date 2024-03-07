@@ -1,6 +1,5 @@
 ﻿using System;
-using GameModule.ExtensionsModule;
-using GameModule.PlayerModule;
+using GameModule.DataModule;
 using UnityEngine;
 
 namespace GameModule.EntityModule

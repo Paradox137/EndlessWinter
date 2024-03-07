@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6214171431945807990}
   - component: {fileID: 1564425039524466802}
   - component: {fileID: 8651756334611048055}
+  - component: {fileID: 5891491118190774210}
   m_Layer: 0
   m_Name: ProjectContext
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 8651756334611048055}
+  - {fileID: 5891491118190774210}
   - {fileID: 704763232398447675}
   - {fileID: 6214171431945807990}
   - {fileID: 1564425039524466802}
@@ -94,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _settingsLoadingMainScene: {fileID: 11400000, guid: 84e285d3f414a7843b517f95a6ddf4a4, type: 2}
   _settingsLoadingNewNovelScene: {fileID: 11400000, guid: 1dd2b3a5819bcb346b948e18c3026260, type: 2}
-  _chapterLoadSettings: {fileID: 11400000, guid: 5feabe652bd9fca41a66f323f5ad65e7, type: 2}
+  _chapterLoadConfigs: {fileID: 11400000, guid: 5214bef6b9de206449b480d27deb87fb, type: 2}
 --- !u!114 &1564425039524466802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,3 +122,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSettings: {fileID: 11400000, guid: eeff5665651427c4da0fe756e0e45594, type: 2}
+--- !u!114 &5891491118190774210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849173639601128237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99641eb5be5643c4b12ecee7f9f49a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

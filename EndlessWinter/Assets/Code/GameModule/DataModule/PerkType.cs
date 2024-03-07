@@ -1,4 +1,4 @@
-﻿namespace GameModule.PlayerModule
+﻿namespace GameModule.DataModule
 {
 	public enum PerkType 
 	{

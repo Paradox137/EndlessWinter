@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace GameModule.UIModule.MVP.Installers
+namespace GameModule.UIModule.Undefined
 {
     public class testInstaller : MonoInstaller
     {

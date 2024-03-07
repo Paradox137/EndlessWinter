@@ -156,10 +156,10 @@ RectTransform:
   m_Father: {fileID: 692406887}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -90}
-  m_SizeDelta: {x: -415.394, y: 332}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112585383
 MonoBehaviour:
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 2080313216}
   - component: {fileID: 2080313215}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: tester
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,11 +492,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x:
-    m_AssetGUID: 0fd1456f7868ad84881531ec3f79ba12
-    m_SubObjectName: 1
+    m_AssetGUID: 5ade6ee2cb0f93246919ddc62380d756
+    m_SubObjectName: 0
     m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_EditorAssetChanged: 1
+    m_EditorAssetChanged: 0
   _imageRef: {fileID: 112585383}
 --- !u!4 &2080313216
 Transform:

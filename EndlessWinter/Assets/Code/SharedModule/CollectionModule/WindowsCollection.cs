@@ -1,17 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
+using SharedModule.UIModule.Window;
 using Zenject;
 
-namespace SharedModule.UIModule.Window
+namespace SharedModule.CollectionModule
 {
 	public class WindowsCollection : IDisposable
 	{
+		private static List<BaseWindow> _windows;
+		
 		[Inject]
-		private static List<BaseWindow> _windows = new List<BaseWindow>();
+		public void Construct()
+		{
+			_windows = new List<BaseWindow>();
+		}
 		
 		public static void Add<TWindow>(TWindow __window) where TWindow : BaseWindow
 		{
+			//_windows ??= new List<BaseWindow>();
+			
 			_windows.Add(__window);
 		}
 

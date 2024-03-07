@@ -1,4 +1,4 @@
-using GameModule.StateMachineModule;
+using GameModule.BusinessLogicModule.StateMachineModule;
 using UnityEngine;
 using Zenject;
 

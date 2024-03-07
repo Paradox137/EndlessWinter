@@ -1,6 +1,6 @@
-﻿namespace SharedModule.UIModule.Signals
+﻿namespace GameModule.UIModule.Signals
 {
-    public struct NextStaticTextSignal
+    public struct NextActorTextSignal
     {
         
     }

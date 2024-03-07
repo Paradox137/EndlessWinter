@@ -1,4 +1,4 @@
-﻿using SharedModule.UIModule.Window;
+﻿using SharedModule.CollectionModule;
 using UnityEngine;
 using Zenject;
 
@@ -11,7 +11,7 @@ namespace GameModule.UIModule.Window.Installers
 		[SerializeField] private AssertNewGamePopupWindow _assertNewGamePopupWindow;
 		public override void InstallBindings()
 		{
-			Container.BindInterfacesAndSelfTo<WindowsCollection>().AsTransient();
+			Container.BindInterfacesAndSelfTo<WindowsCollection>().AsCached();
 
 			Container.BindInterfacesAndSelfTo<CharacterWindow>().FromInstance(_characterWindow).AsSingle();
 			Container.BindInterfacesAndSelfTo<MainMenuWindow>().FromInstance(_mainMenuWindow).AsSingle();

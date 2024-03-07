@@ -1,10 +1,9 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
-using UnityEngine;
+using SharedModule.ServiceModule.SceneModule;
 using UnityEngine.SceneManagement;
-using Zenject;
 
-namespace SharedModule.ServiceModule.SceneModule
+namespace GameModule.ServiceModule.SceneModule
 {
 	public class SceneLoader
 	{
