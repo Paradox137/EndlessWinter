@@ -32,6 +32,8 @@ GPT: Для написания диалогов и взаимодействий 
 
 Stable Diffusion: Для генерации всего арта в игре, изменение эмоций лиц, изменение поз персонажей
 
+Zenject: Просто для DI и изучения Zenject фреймоврка. P/S не любитель Zenject-a, в любых проектах использовал бы VContainer или кастомный/самописный (pure c#) DI
+
 UniRx: Для реактивных свойств и реализации основной Observable+Subscribe логики в MVC модуле с шиной событой
 
 ![image](https://github.com/Paradox137/EndlessWinter/assets/96653165/fcdcacc2-0dd7-4ae4-b015-f75c8f42b9ac)
