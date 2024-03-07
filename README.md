@@ -36,8 +36,18 @@ Zenject: Просто для DI и изучения Zenject фреймоврка
 
 UniRx: Для реактивных свойств и реализации основной Observable+Subscribe логики в MVC модуле с шиной событой
 
+
+
+
+
+
 ![image](https://github.com/Paradox137/EndlessWinter/assets/96653165/fcdcacc2-0dd7-4ae4-b015-f75c8f42b9ac)
 ![image](https://github.com/Paradox137/EndlessWinter/assets/96653165/be2bc18e-4fde-4672-89d3-ef4593686366)
 ![image](https://github.com/Paradox137/EndlessWinter/assets/96653165/ceb832eb-fbb0-4a48-af5e-3fa2c72459e9)
 
+
+
+https://github.com/Paradox137/EndlessWinter/assets/96653165/8ca6db9b-1a14-47ef-b3bd-2b1d30e46d38
+
+https://github.com/Paradox137/EndlessWinter/assets/96653165/929dec47-8624-4d0f-8df2-170af00a902d
 
