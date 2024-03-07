@@ -38,11 +38,11 @@ namespace GameModule.StorageModule
         
         public ControlMode SkipToSaveData()
         {
-            if (_dialogueSavedPart > 0)
+            /*if (_dialogueSavedPart > 0)
             {
                 for (int i = 0; i < _chapter.Dialogues.Count; i++)
                     _chapter.Dialogues.RemoveAt(i);
-            }
+            }*/
             
                 
             ushort coupledFlow = _dialogueSavedFlow;
